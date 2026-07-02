@@ -1,0 +1,37 @@
+articleids:
+- idtype: pmid
+  value: '42367745'
+- idtype: pmcid
+  value: PMC13293728
+- idtype: doi
+  value: 10.1162/NOL.a.255
+- idtype: pii
+  value: NOL.a.255
+authors:
+- authtype: Author
+  name: Liu X
+- authtype: Author
+  name: Gu L
+- authtype: Author
+  name: Feng X
+- authtype: Author
+  name: Feng Y
+- authtype: Author
+  name: Lin X
+- authtype: Author
+  name: Gu N
+- authtype: Author
+  name: Mei L
+epubdate: 2026 Jun 16
+fulljournalname: Neurobiology of language (Cambridge, Mass.)
+issue: ''
+pages: ''
+pmclivedate: 2026/06/26
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/16 00:00
+source: Neurobiol Lang (Camb)
+title: Lexical Representations of the Native and Second Languages During L2 Word Reading
+  in Chinese-English Bilinguals.
+uid: '13293728'
+volume: '7'

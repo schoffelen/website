@@ -1,0 +1,56 @@
+articleids:
+- idtype: pmid
+  value: '42322807'
+- idtype: doi
+  value: 10.1016/j.clinph.2026.2111981
+- idtype: pii
+  value: S1388-2457(26)00481-5
+- idtype: pmcid
+  value: PMC13314371
+- idtype: MID
+  value: NIHMS2190179
+authors:
+- authtype: Author
+  name: Hatano K
+- authtype: Author
+  name: Kuroda N
+- authtype: Author
+  name: Uda H
+- authtype: Author
+  name: Sakakura K
+- authtype: Author
+  name: Cools MJ
+- authtype: Author
+  name: Luat AF
+- authtype: Author
+  name: Osawa SI
+- authtype: Author
+  name: Nemoto H
+- authtype: Author
+  name: Ukishiro K
+- authtype: Author
+  name: Endo H
+- authtype: Author
+  name: Nakasato N
+- authtype: Author
+  name: Takayama Y
+- authtype: Author
+  name: Iijima K
+- authtype: Author
+  name: Iwasaki M
+- authtype: Author
+  name: Asano E
+epubdate: 2026 Jun 15
+fulljournalname: 'Clinical neurophysiology : official journal of the International
+  Federation of Clinical Neurophysiology'
+issue: ''
+pages: '2111981'
+pmclivedate: 2026/07/01
+printpubdate: ''
+pubdate: 2026 Jun 15
+sortdate: 2026/06/15 00:00
+source: Clin Neurophysiol
+title: Internal and external validation of comprehensive high-frequency activity biomarkers
+  for epilepsy surgery.
+uid: '13314371'
+volume: '190'
