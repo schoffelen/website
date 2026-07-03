@@ -2278,8 +2278,8 @@
         function call?
       link: /faq/other/showcallinfo/
       nav_order: 0
-    - title: How do I select 32 OPM sensor positions from the 144 slots in the FieldLine
-        Beta2 smart helmet?
+    - title: How do I select a subset of OPM sensor positions from the 144 slots in
+        the FieldLine smart helmet?
       link: /faq/other/opm_selection/
       nav_order: 0
     - title: How should I prepare for the upcoming FieldTrip workshop?

@@ -3,8 +3,8 @@
 - link: /example/other/opm_straighthelmet
   title: Designing an OPM helmet with a straight opening at the bottom
 - link: /faq/other/opm_selection
-  title: How do I select 32 OPM sensor positions from the 144 slots in the FieldLine
-    Beta2 smart helmet?
+  title: How do I select a subset of OPM sensor positions from the 144 slots in the
+    FieldLine smart helmet?
 - link: /getting_started/meg/cerca
   title: Getting started with Cerca OPM data
 - link: /getting_started/meg/fieldline
