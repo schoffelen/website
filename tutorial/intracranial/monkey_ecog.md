@@ -309,16 +309,14 @@ Several analysis strategies were applied but not explained in further detail. If
 
 You can read more about other types of intracranial recordings such as [spike train recordings](/tutorial/intracranial/spike) and [spikes and local field potentials](/tutorial/intracranial/spikefield) in the respective tutorials.
 
-Here is also a list of related documentation:
+See also these related tutorials:
 
-### FAQs on connectivity
+{% include seealso category="tutorial" tag1="ieeg" tag2="animal" tag3="freq" tag4="connectivity" tag5="dataformat" boolean="or" %}
 
-{% include seealso category="faq" tag1="connectivity" %}
+and these related example scripts:
 
-### FAQs on frequency analysis
+{% include seealso category="example" tag1="ieeg" tag2="animal" tag3="freq" tag4="connectivity" tag5="dataformat" boolean="or" %}
 
-{% include seealso category="faq" tag1="freq" %}
+and these frequently asked questions:
 
-### FAQs on data formats
-
-{% include seealso category="faq" tag1="dataformat" %}
+{% include seealso category="faq" tag1="ieeg" tag2="animal" tag3="freq" tag4="connectivity" tag5="dataformat" boolean="or" %}

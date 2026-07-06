@@ -604,18 +604,14 @@ We recommend that the user construct a single script for a single subject by cop
 
 You can read more about the challenges and concepts of preprocessing intracranial EEG data in the [Intracranial EEG for Cognitive Neuroscience handbook](https://psyarxiv.com/9jd32). You can read more about other types of intracranial recordings such as [spike train recordings](/tutorial/intracranial/spike) and [spikes and local field potentials](/tutorial/intracranial/spikefield) in the following documentation.
 
-{% include seealso tag1="getting_started" tag2="bioimage" %}
-{% include seealso category="example" tag1="ecog" %}
-{% include seealso category="tutorial" tag1="animal" %}
+See also the [getting started with Bioimage](/getting_started/othersoftware/bioimage) and these related tutorials:
 
-### FAQs on data formats
+{% include seealso category="tutorial" tag1="ieeg" tag2="ecog" tag3="animal" tag4="dataformat" tag5="freq" tag6="connectivity" boolean="or" %}
 
-{% include seealso category="faq" tag1="dataformat" %}
+and these related example scripts:
 
-### FAQs on frequency analysis
+{% include seealso category="example" tag1="ieeg" tag2="ecog" tag3="animal" tag4="dataformat" tag5="freq" tag6="connectivity" boolean="or" %}
 
-{% include seealso category="faq" tag1="freq" %}
+and these frequently asked questions:
 
-### FAQs on connectivity
-
-{% include seealso category="faq" tag1="connectivity" %}
+{% include seealso category="faq" tag1="ieeg" tag2="ecog" tag3="animal" tag4="dataformat" tag5="freq" tag6="connectivity" boolean="or" %}

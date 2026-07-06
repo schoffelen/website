@@ -1,6 +1,12 @@
-<ul>
+{% if include.boolean != nil %}
+{% assign boolean = include.boolean %}
+{% else %}
+{% assign boolean = "and" %}
+{% endif %}
+{% assign pagelist = "" | split: "" %}
+{% if boolean == "and" %}
   {% for p in site.pages %}
-  {% if include.category  == nil or include.category  == "" or p.category contains include.category  %}
+  {% if include.category == nil or include.category == "" or p.category contains include.category  %}
   {% if include.tag  == nil or include.tag  == "" or p.tags contains include.tag  %}
   {% if include.tag1 == nil or include.tag1 == "" or p.tags contains include.tag1 %}
   {% if include.tag2 == nil or include.tag2 == "" or p.tags contains include.tag2 %}
@@ -11,7 +17,7 @@
   {% if include.tag7 == nil or include.tag7 == "" or p.tags contains include.tag7 %}
   {% if include.tag8 == nil or include.tag8 == "" or p.tags contains include.tag8 %}
   {% if include.tag9 == nil or include.tag9 == "" or p.tags contains include.tag9 %}
-  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+  {% assign pagelist = pagelist | push: p %}
   {% endif %}
   {% endif %}
   {% endif %}
@@ -23,5 +29,26 @@
   {% endif %}
   {% endif %}
   {% endif %}
+  {% endfor %}
+{% elsif boolean == "or" %}
+  {% for p in site.pages %}
+  {% if include.category == nil or include.category == "" or p.category contains include.category  %}
+  {% if include.tag  != nil and include.tag  != "" %} {% if p.tags contains include.tag  %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag1 != nil and include.tag1 != "" %} {% if p.tags contains include.tag1 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag2 != nil and include.tag2 != "" %} {% if p.tags contains include.tag2 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag3 != nil and include.tag3 != "" %} {% if p.tags contains include.tag3 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag4 != nil and include.tag4 != "" %} {% if p.tags contains include.tag4 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag5 != nil and include.tag5 != "" %} {% if p.tags contains include.tag5 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag6 != nil and include.tag6 != "" %} {% if p.tags contains include.tag6 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag7 != nil and include.tag7 != "" %} {% if p.tags contains include.tag7 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag8 != nil and include.tag8 != "" %} {% if p.tags contains include.tag8 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% if include.tag9 != nil and include.tag9 != "" %} {% if p.tags contains include.tag9 %} {% assign pagelist = pagelist | push: p %} {% endif %} {% endif %}
+  {% endif %}
+  {% endfor %}
+{% endif %}
+<ul>
+  {% assign pagelist = pagelist | uniq %}
+  {% for p in pagelist %}
+    <li><a href="{{ p.url }}">{{ p.title }}</a></li>
   {% endfor %}
 </ul>
