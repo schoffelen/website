@@ -30,6 +30,7 @@ See also the [frequently asked questions](/faq) and [example scripts](/example).
 - [Construct a FEM headmodel for EEG source analysis](/tutorial/source/headmodel_eeg_fem)
 - [Creating a source model for MEG or EEG source analysis](/tutorial/source/sourcemodel)
 - [Coregistration of optically pumped magnetometer (OPM) data](/tutorial/source/coregistration_opm)
+- [Comparing MEG sensitivity maps for SQUID and OPM sensor arrays](/tutorial/source/sensitivity_maps)
 - [Localizing electrodes using a 3D-scanner](/tutorial/source/electrode)
 - [Localizing oscillatory sources in MEG data using a beamformer](/tutorial/source/beamformer)
 - [Beamforming oscillatory responses in combined MEG/EEG data](/tutorial/source/beamforming)
