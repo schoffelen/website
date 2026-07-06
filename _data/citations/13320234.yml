@@ -1,0 +1,33 @@
+articleids:
+- idtype: pmid
+  value: '42383363'
+- idtype: doi
+  value: 10.1093/cercor/bhag070
+- idtype: pii
+  value: '8722816'
+- idtype: pmcid
+  value: PMC13320234
+authors:
+- authtype: Author
+  name: Meng Q
+- authtype: Author
+  name: Hegner YL
+- authtype: Author
+  name: Giblin I
+- authtype: Author
+  name: McMahon C
+- authtype: Author
+  name: Johnson BW
+epubdate: ''
+fulljournalname: 'Cerebral cortex (New York, N.Y. : 1991)'
+issue: '6'
+pages: ''
+pmclivedate: 2026/07/02
+printpubdate: 2026 Jun 2
+pubdate: 2026 Jun 2
+sortdate: 2026/06/02 00:00
+source: Cereb Cortex
+title: Prior exposure to speech rapidly modulates cortical processing of high-level
+  linguistic structure.
+uid: '13320234'
+volume: '36'

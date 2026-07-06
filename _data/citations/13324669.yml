@@ -1,0 +1,41 @@
+articleids:
+- idtype: pmid
+  value: '42396409'
+- idtype: pmcid
+  value: PMC13324669
+- idtype: doi
+  value: 10.1016/j.isci.2026.116586
+- idtype: pii
+  value: S2589-0042(26)01961-9
+authors:
+- authtype: Author
+  name: Bavassi L
+- authtype: Author
+  name: Campos-Arteaga G
+- authtype: Author
+  name: Palacios-García I
+- authtype: Author
+  name: Villena-Gonzalez M
+- authtype: Author
+  name: Campassi L
+- authtype: Author
+  name: Marachlian E
+- authtype: Author
+  name: Forcato C
+- authtype: Author
+  name: Rodriguez Balboa E
+- authtype: Author
+  name: Pedreira ME
+epubdate: 2026 Jun 26
+fulljournalname: iScience
+issue: '7'
+pages: '116586'
+pmclivedate: 2026/07/03
+printpubdate: ''
+pubdate: 2026 Jul 17
+sortdate: 2026/06/26 00:00
+source: iScience
+title: 'Condition-specific neural signatures of reactivation during post-retrieval
+  rest: An EEG study.'
+uid: '13324669'
+volume: '29'

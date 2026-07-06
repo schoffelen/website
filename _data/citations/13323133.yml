@@ -1,0 +1,33 @@
+articleids:
+- idtype: pmid
+  value: '42395320'
+- idtype: pmcid
+  value: PMC13323133
+- idtype: doi
+  value: 10.3389/fnins.2026.1810323
+authors:
+- authtype: Author
+  name: Lai J
+- authtype: Author
+  name: Pandey P
+- authtype: Author
+  name: Baum DM
+- authtype: Author
+  name: Klinzing JG
+- authtype: Author
+  name: Sánchez-Corzo A
+- authtype: Author
+  name: Sitaram R
+epubdate: 2026 Jun 18
+fulljournalname: Frontiers in neuroscience
+issue: ''
+pages: '1810323'
+pmclivedate: 2026/07/03
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/18 00:00
+source: Front Neurosci
+title: Covariance-based analysis of spindle-band EEG during declarative and non-declarative
+  odor cueing in sleep.
+uid: '13323133'
+volume: '20'

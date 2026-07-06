@@ -1,0 +1,40 @@
+articleids:
+- idtype: pmid
+  value: '42049727'
+- idtype: doi
+  value: 10.1038/s41467-026-71918-7
+- idtype: pii
+  value: 10.1038/s41467-026-71918-7
+- idtype: pmcid
+  value: PMC13328637
+authors:
+- authtype: Author
+  name: Ismail MM
+- authtype: Author
+  name: Momi D
+- authtype: Author
+  name: Wang Z
+- authtype: Author
+  name: Bastiaens SP
+- authtype: Author
+  name: Oveisi MP
+- authtype: Author
+  name: Greiner HM
+- authtype: Author
+  name: Mabbott DJ
+- authtype: Author
+  name: Griffiths JD
+- authtype: Author
+  name: Kadis DS
+epubdate: 2026 Apr 28
+fulljournalname: Nature communications
+issue: '1'
+pages: ''
+pmclivedate: 2026/07/04
+printpubdate: ''
+pubdate: 2026 Apr 28
+sortdate: 2026/04/28 00:00
+source: Nat Commun
+title: Developmental disinhibition gates language lateralization in childhood.
+uid: '13328637'
+volume: '17'

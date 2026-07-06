@@ -1,0 +1,31 @@
+articleids:
+- idtype: doi
+  value: 10.3389/fnins.2026.1829857
+- idtype: pmcid
+  value: PMC13330577
+authors:
+- authtype: Author
+  name: Liu Z
+- authtype: Author
+  name: Jing Y
+- authtype: Author
+  name: Lu R
+- authtype: Author
+  name: Song K
+- authtype: Author
+  name: Wang N
+- authtype: Author
+  name: Li H
+epubdate: 2026 Jun 19
+fulljournalname: Frontiers in Neuroscience
+issue: ''
+pages: ''
+pmclivedate: 2026/07/04
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/19 00:00
+source: Front Neurosci
+title: Body mass index affects EEG microstate dynamics through blood viscosity in
+  high-altitude environments.
+uid: '13330577'
+volume: '20'

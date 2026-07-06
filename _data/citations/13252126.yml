@@ -1,0 +1,29 @@
+articleids:
+- idtype: pmid
+  value: '42282613'
+- idtype: pmcid
+  value: PMC13252126
+- idtype: doi
+  value: 10.64898/2026.06.05.730488
+- idtype: pii
+  value: 2026.06.05.730488
+authors:
+- authtype: Author
+  name: Dake M
+- authtype: Author
+  name: Dandekar S
+- authtype: Author
+  name: Curtis CE
+epubdate: 2026 Jun 7
+fulljournalname: 'bioRxiv : the preprint server for biology'
+issue: ''
+pages: ''
+pmclivedate: 2026/06/11
+printpubdate: ''
+pubdate: 2026 Jun 7
+sortdate: 2026/06/07 00:00
+source: bioRxiv
+title: Neural synchrony between prefrontal and visual cortex supports visual working
+  memory.
+uid: '13252126'
+volume: ''

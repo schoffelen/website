@@ -1,0 +1,35 @@
+articleids:
+- idtype: pmid
+  value: '42290392'
+- idtype: doi
+  value: 10.1111/head.70108
+- idtype: pmcid
+  value: PMC13326974
+authors:
+- authtype: Author
+  name: Masson R
+- authtype: Author
+  name: ElShafei A
+- authtype: Author
+  name: Demarquay G
+- authtype: Author
+  name: Fornoni L
+- authtype: Author
+  name: Lévêque Y
+- authtype: Author
+  name: Caclin A
+- authtype: Author
+  name: Bidet-Caulet A
+epubdate: 2026 Jun 15
+fulljournalname: Headache
+issue: '7'
+pages: 1459-1473
+pmclivedate: 2026/07/03
+printpubdate: 2026 Jul-Aug
+pubdate: 2026 Jul-Aug
+sortdate: 2026/07/01 00:00
+source: Headache
+title: 'Deficient inhibition of irrelevant visual information in migraine: A magnetoencephalography
+  study of alpha-band activity.'
+uid: '13326974'
+volume: '66'

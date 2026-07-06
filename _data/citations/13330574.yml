@@ -1,0 +1,45 @@
+articleids:
+- idtype: doi
+  value: 10.1016/j.cnp.2026.06.002
+- idtype: pmcid
+  value: PMC13330574
+- idtype: pii
+  value: S2467-981X(26)00046-6
+authors:
+- authtype: Author
+  name: Lijdsman S
+- authtype: Author
+  name: Königs M
+- authtype: Author
+  name: van Sandwijk MS
+- authtype: Author
+  name: Bouts AH
+- authtype: Author
+  name: van Hoeck K
+- authtype: Author
+  name: de Jong H
+- authtype: Author
+  name: Bruining H
+- authtype: Author
+  name: Bemelman FJ
+- authtype: Author
+  name: van Rootselaar AF
+- authtype: Author
+  name: Oostrom KJ
+- authtype: Author
+  name: Groothoff JW
+- authtype: Author
+  name: Bosman CA
+epubdate: 2026 Jun 12
+fulljournalname: Clinical Neurophysiology Practice
+issue: ''
+pages: 528-37
+pmclivedate: 2026/07/04
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/12 00:00
+source: Clin Neurophysiol Pract
+title: Resting-state EEG reveals slowing and altered functional connectivity in children
+  and young adults with severe chronic kidney disease.
+uid: '13330574'
+volume: '11'

@@ -1,0 +1,29 @@
+articleids:
+- idtype: pmid
+  value: '42389590'
+- idtype: pmcid
+  value: PMC13320337
+- idtype: doi
+  value: 10.1016/j.isci.2026.116458
+- idtype: pii
+  value: S2589-0042(26)01833-X
+authors:
+- authtype: Author
+  name: Titone L
+- authtype: Author
+  name: Maess B
+- authtype: Author
+  name: Meyer L
+epubdate: 2026 Jun 24
+fulljournalname: iScience
+issue: '7'
+pages: '116458'
+pmclivedate: 2026/07/02
+printpubdate: ''
+pubdate: 2026 Jul 17
+sortdate: 2026/06/24 00:00
+source: iScience
+title: Neural tracking of prosodic and statistical rhythms jointly supports artificial
+  language learning.
+uid: '13320337'
+volume: '29'

@@ -1,0 +1,47 @@
+articleids:
+- idtype: pmid
+  value: '42397924'
+- idtype: doi
+  value: 10.1126/sciadv.aee1002
+- idtype: pmcid
+  value: PMC13330860
+authors:
+- authtype: Author
+  name: Sheriff A
+- authtype: Author
+  name: Omidbeigi M
+- authtype: Author
+  name: Lane G
+- authtype: Author
+  name: Yang Q
+- authtype: Author
+  name: Zhou G
+- authtype: Author
+  name: Dede A
+- authtype: Author
+  name: Arriaga N
+- authtype: Author
+  name: Sagar V
+- authtype: Author
+  name: Holubecki AM
+- authtype: Author
+  name: Braga RM
+- authtype: Author
+  name: Kay LM
+- authtype: Author
+  name: Tan BK
+- authtype: Author
+  name: Zelano C
+epubdate: 2026 Jul 3
+fulljournalname: Science advances
+issue: '27'
+pages: eaee1002
+pmclivedate: 2026/07/04
+printpubdate: 2026 Jul 3
+pubdate: 2026 Jul 3
+sortdate: 2026/07/03 00:00
+source: Sci Adv
+title: Theta oscillations are an organizational unit of odor processing in the olfactory
+  bulb.
+uid: '13330860'
+volume: '12'

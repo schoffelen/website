@@ -1,0 +1,33 @@
+articleids:
+- idtype: pmid
+  value: '41903596'
+- idtype: doi
+  value: 10.1016/j.neuroimage.2026.121893
+- idtype: pii
+  value: S1053-8119(26)00209-0
+- idtype: pmcid
+  value: PMC13328065
+authors:
+- authtype: Author
+  name: He S
+- authtype: Author
+  name: Martin-Rodriguez JF
+- authtype: Author
+  name: Pogosyan A
+- authtype: Author
+  name: Moraud EM
+- authtype: Author
+  name: Tan H
+epubdate: 2026 Mar 27
+fulljournalname: NeuroImage
+issue: ''
+pages: '121893'
+pmclivedate: 2026/07/04
+printpubdate: 2026 May 1
+pubdate: 2026 May 1
+sortdate: 2026/05/01 00:00
+source: Neuroimage
+title: Characterising motor and cognitive contributions of cortical beta oscillations
+  and their modulation with rTMS.
+uid: '13328065'
+volume: '331'

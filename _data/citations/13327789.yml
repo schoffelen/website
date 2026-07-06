@@ -1,0 +1,30 @@
+articleids:
+- idtype: pmid
+  value: '42396549'
+- idtype: pmcid
+  value: PMC13327789
+- idtype: doi
+  value: 10.1162/OPMI.a.360
+- idtype: pii
+  value: OPMI.a.360
+authors:
+- authtype: Author
+  name: Haslett DA
+- authtype: Author
+  name: Yao B
+- authtype: Author
+  name: Duan X
+- authtype: Author
+  name: Cai ZG
+epubdate: 2026 Jun 17
+fulljournalname: 'Open mind : discoveries in cognitive science'
+issue: ''
+pages: 827-856
+pmclivedate: 2026/07/03
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/17 00:00
+source: Open Mind (Camb)
+title: 'Incipient Constituents: Phonesthemes Facilitate Word Processing in English.'
+uid: '13327789'
+volume: '10'

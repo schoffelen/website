@@ -1,0 +1,33 @@
+articleids:
+- idtype: pmid
+  value: '42389884'
+- idtype: doi
+  value: 10.1177/17455057261456871
+- idtype: pmcid
+  value: PMC13329011
+authors:
+- authtype: Author
+  name: Pohle C
+- authtype: Author
+  name: Büchel D
+- authtype: Author
+  name: Sandbakk SB
+- authtype: Author
+  name: Sandbakk Ø
+- authtype: Author
+  name: Pletzer B
+- authtype: Author
+  name: Baumeister J
+epubdate: 2026 Jul 2
+fulljournalname: Women's health (London, England)
+issue: ''
+pages: '17455057261456871'
+pmclivedate: 2026/07/04
+printpubdate: 2026 Jan-Dec
+pubdate: 2026 Jan-Dec
+sortdate: 2026/01/01 00:00
+source: Womens Health (Lond)
+title: 'Uncovering a hidden modulator for women in sports: An exploratory study of
+  menstrual pain and brain connectivity.'
+uid: '13329011'
+volume: '22'
