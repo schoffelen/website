@@ -65,9 +65,17 @@ The segmentation contains scalp, skull, and brain compartments. This can be conv
     cfg = [];
     cfg.anaparameter = 'anatomy';
     cfg.funparameter = 'seg';
-    cfg.funcolormap = rand(4,3);
+    cfg.funcolormap = [
+        0 0 0 % black
+        1 0 0 % red
+        0 1 0 % green
+        0 0 1 % blue
+        ];
     cfg.atlas = mri_segmented;
+    cfg.location = [0 0 0];
     ft_sourceplot(cfg, mri_segmented)
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure1.png" width="600" %}
 
 ### Create the scalp mesh
 
@@ -82,6 +90,8 @@ We extract the scalp surface as a high-resolution mesh using an isosurface.
     ft_plot_mesh(scalp, 'axes', true)
     ft_headlight
 
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure2.png" width="600" %}
+
 ### Create the volume conduction model
 
 We create a single-shell volume conduction model for MEG from the brain compartment.
@@ -93,6 +103,8 @@ We create a single-shell volume conduction model for MEG from the brain compartm
 
     ft_plot_headmodel(headmodel, 'axes', true)
     ft_headlight
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure3.png" width="600" %}
 
 ### Load the sensor arrays
 
@@ -132,6 +144,8 @@ For the CTF systems we select only the MEG channels, excluding the reference cha
     ft_plot_sens(ctf151);
     ft_plot_sens(ctf275);
 
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure4.png" width="600" %}
+
 We can see that the three sensor arrays are aligned to each other. Each of the sensor arrays also includes the default/template locations of the Nasion and LPA/RPA anatomical landmarks or fiducials.
 
 ### Align the sensors to the head model
@@ -151,6 +165,8 @@ In the interactive alignment you should rotate and translate the sensor array to
 - translate along z -35
 - apply
 - quit
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure5.png" width="600" %}
 
 The CTF151 and CTF64 arrays are similarly aligned, so you can use the same transformation for those.
 
@@ -178,6 +194,8 @@ You can check the alignment by plotting the sensors with the cortical surface.
     ft_plot_headshape(sourcemodel, 'facecolor', [0.8 0.6 0.6]);
     ft_headlight
 
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure6.png" width="600" %}
+
 #### Convert to SI units
 
 For correct numerical computation of the leadfields, everything should be in SI units (meters, Tesla, etc.).
@@ -196,6 +214,8 @@ You can plot the sensors, head, and cortical surface together to confirm everyth
     ft_plot_mesh(scalp, 'edgecolor', 'none', 'facecolor', 'b', 'facealpha', 0.2)
     ft_plot_sens(ctf275_aligned, 'coil', false, 'orientation', false)
     ft_headlight
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure7.png" width="600" %}
 
 ### Compute the leadfield
 
@@ -275,7 +295,11 @@ We can now use the local function to compute the sensitivity maps for the differ
     ft_plot_sens(ctf275_aligned)
     ft_colormap('RdBu') % from red (low values) to blue (high values)
     colorbar
-    view([-135 45])
+    view([-139 11])
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure8.png" width="600" %}
+
+If you rotate it so that you can see the bottom of the brain, you can see that distance to the deep sources is the largest which is here coded in blue.
 
 #### Relative sensitivity (free orientation)
 
@@ -286,7 +310,9 @@ We can now use the local function to compute the sensitivity maps for the differ
     ft_colormap('-RdBu') % from red to blue, but then the opposite
     clim([0 1])
     colorbar
-    view([-135 45])
+    view([-139 11])
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure9.png" width="600" %}
 
 The sensitivity decreases for the deeper sources. We can also plot the sensitivity as a function of distance.
 
@@ -294,6 +320,8 @@ The sensitivity decreases for the deeper sources. We can also plot the sensitivi
     plot(sensitivity_ctf275.distance * 1e3, sensitivity_ctf275.free./max(sensitivity_ctf275.free), '.')
     xlabel('distance (mm)');
     ylabel('relative sensitivity, orientation free');
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure10.png" width="600" %}
 
 #### Relative sensitivity (fixed orientation)
 
@@ -304,7 +332,9 @@ The sensitivity decreases for the deeper sources. We can also plot the sensitivi
     ft_colormap('-RdBu') % from red to blue, but then the opposite
     clim([0 1])
     colorbar
-    view([-135 45])
+    view([-139 11])
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure11.png" width="600" %}
 
 #### Absolute sensitivity (fixed orientation)
 
@@ -316,7 +346,9 @@ The relative sensitivity is scaled relative to that of the most sensitive dipole
     ft_plot_sens(ctf275_aligned)
     ft_colormap('-RdBu') % from red to blue, but then the opposite
     colorbar
-    view([-135 45])
+    view([-139 11])
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure12.png" width="600" %}
 
 ### Compare sensitivity between CTF systems
 
@@ -346,8 +378,10 @@ We can now directly compare between the different CTF systems.
     clim([0 60])
 
     linkprop([h1, h2, h3], {"CameraPosition","CameraUpVector"});
-    view([-135 45])
+    view([-139 11])
     rotate3d
+
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure13.png" width="600" %}
 
 Even though the distance of the sensors to the sources is not really different for the 64, 151 and 275 channel systems, the increase in the number of channels has a considerable impact on the sensitivity.
 
@@ -406,8 +440,13 @@ The FieldLine sensor has a 5 mm standoff distance: the center of the cell (where
     figure
     ft_plot_sens(fieldlinebeta2_shifted);
     ft_plot_headshape(scalp, 'facecolor', 'skin');
+    ft_headlight
 
-Compute the leadfield for the FieldLine system.
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure14.png" width="600" %}
+
+Compared to the CTF systems, you can see that the sensors are much closer to the scalp and hence also to the dipoles on the cortical sheet.
+
+We proceed by computing the leadfield and the sensitivity maps for the FieldLine system.
 
     cfg = [];
     cfg.headmodel = headmodel; % singleshell model for MEG
@@ -416,8 +455,6 @@ Compute the leadfield for the FieldLine system.
     cfg.orientation = 'yes'; % compute the dipole orientations
     cfg.grad = fieldlinebeta2_shifted;
     sourcemodel_fieldlinebeta2 = ft_prepare_leadfield(cfg);
-
-Compute the sensitivity map.
 
     cfg = [];
     cfg.grad = fieldlinebeta2_shifted;
@@ -451,7 +488,9 @@ We can compare the abosolute sensitivity of the CTF275 and FieldLine beta2 side 
     view([-90 0])
     rotate3d
 
-The 275-channel CTF system has a maximum absolute sensitivity of about 60 fT/nAm, with 144 axial sensors in FieldLine beta2 smart helmet we would obtain a maximum absolute sensitivity that is approximately double that. The FieldLine v3 sensors furthermore allow for recording in the tangential direction, which means that with 144 sensors you can record 288 channels. If we were to take that into account, the sensitivity of the OPM system would be even larger, especially for the superficial dipoles.
+{% include image src="/assets/img/tutorial/sensitivity_maps/figure15.png" width="600" %}
+
+The 275-channel CTF system has a maximum absolute sensitivity of about 60 fT/nAm and with the 144 axial sensors in FieldLine beta2 smart helmet we would obtain a maximum absolute sensitivity of approximately 120 fT/nAm. The FieldLine v3 sensors furthermore allow for recording in the tangential direction, which means that with 144 sensors you can record 288 channels. If we were to take that into account, the sensitivity of the OPM system would be even larger, especially for the superficial dipoles.
 
 However, what we have ignored sofar is that the different sensors also have different intrinsic noise characteristics (the OPMs are more noisy) and different sensitivities to the environmental noise (the CTF sensors are axial gradiometers, the OPMs are magnetometers). A full analysis of the signal-to-noise ratio and the effect of the different sensor characteristics and arrangements falls ourtside the scope of this tutorial. The paper by Schoffelen et al (2025) on ["Optimal configuration of on-scalp OPMs with fixed channel counts"](https://doi.org/10.1162/imag.a.22) does a more throughout job and computes the effect that different sensor arrangements have on the sensitivity, also considering sensor noise, environmental noise, and head-movement related noise. The code for those simulations is shared on <https://github.com/schoffelen/opm_simulations>. Also the paper by Iivanainen et al (2017) on ["Measuring MEG closer to the brain: Performance of on-scalp sensor arrays"](https://doi.org/10.1016/j.neuroimage.2016.12.048) deals with this.
 
