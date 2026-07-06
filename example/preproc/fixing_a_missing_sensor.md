@@ -1,12 +1,12 @@
 ---
-title: Fixing a missing channel
+title: Fixing a missing channel in a CTF dataset
 tags: [meg, preprocessing, ctf, neighbours]
 category: example
 redirect_from:
     - /example/fixing_a_missing_sensor/
 ---
 
-Use this script when one or more channels in the 275 channel CTF system are dead. It identifies the missing sensors and uses **[ft_channelrepair](/reference/ft_channelrepair)** to fix the problem, so you can compare or average this handicapped dataset with complete datasets. Use this function after preprocessing. This snippet of code works if you have loaded into memory (in addition to the data structure you would like to fix,) a full list of labels (let's call this label), and a gradiometer description (a grad-structure) describing all the sensors.
+Use this script when one or more channels in the 275-channel CTF system are dead. It identifies the missing sensors and uses **[ft_channelrepair](/reference/ft_channelrepair)** to fix the problem, so you can compare or average this handicapped dataset with complete datasets. Use this function after preprocessing. This snippet of code works if you have loaded into memory (in addition to the data structure you would like to fix,) a full list of labels (let's call this label), and a gradiometer description (a grad-structure) describing all the sensors.
 
     [notmissing, dummy] = match_str(label, data.label);
     newtrial = cell(size(data.trial));
