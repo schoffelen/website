@@ -765,7 +765,7 @@
     - title: Determine the filter characteristics
       link: /example/preproc/filter_characteristics/
       nav_order: 0
-    - title: Fixing a missing channel
+    - title: Fixing a missing channel in a CTF dataset
       link: /example/preproc/fixing_a_missing_sensor/
       nav_order: 0
     - title: Getting started with reading raw EEG or MEG data
@@ -1046,6 +1046,10 @@
       nav_order: 0
     - title: How to import data from MNE-Python and FreeSurfer
       link: /example/other/import_mne/
+      nav_order: 0
+    - title: How to select a subset of OPM sensor positions from the 144 slots in
+        the FieldLine smart helmet?
+      link: /example/other/opm_selection/
       nav_order: 0
     - title: How to use ft_checkconfig
       link: /example/other/checkconfig/
@@ -2278,10 +2282,6 @@
         function call?
       link: /faq/other/showcallinfo/
       nav_order: 0
-    - title: How do I select a subset of OPM sensor positions from the 144 slots in
-        the FieldLine smart helmet?
-      link: /faq/other/opm_selection/
-      nav_order: 0
     - title: How should I prepare for the upcoming FieldTrip workshop?
       link: /faq/other/workshop_preparation/
       nav_order: 0
@@ -2686,6 +2686,9 @@
     pagelist:
     - title: Beamforming oscillatory responses in combined MEG/EEG data
       link: /tutorial/source/beamforming/
+      nav_order: 0
+    - title: Comparing MEG sensitivity maps for SQUID and OPM sensor arrays
+      link: /tutorial/source/sensitivity_maps/
       nav_order: 0
     - title: Computation of virtual MEG channels in source-space
       link: /tutorial/source/virtual_sensors/

@@ -34,6 +34,9 @@
   title: Correlation analysis of fMRI data
 - link: /example/other/import_mne
   title: How to import data from MNE-Python and FreeSurfer
+- link: /example/other/opm_selection
+  title: How to select a subset of OPM sensor positions from the 144 slots in the
+    FieldLine smart helmet?
 - link: /example/other/opm_sensors
   title: Designing 3D printed helmets for different OPM sensor types
 - link: /example/other/opm_straighthelmet
@@ -57,7 +60,7 @@
 - link: /example/preproc/filter_characteristics
   title: Determine the filter characteristics
 - link: /example/preproc/fixing_a_missing_sensor
-  title: Fixing a missing channel
+  title: Fixing a missing channel in a CTF dataset
 - link: /example/preproc/ica_ecg
   title: Independent component analysis (ICA) to remove ECG artifacts
 - link: /example/preproc/ica_eog

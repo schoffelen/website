@@ -4,3 +4,5 @@
   title: Compute EEG leadfields using a concentric spheres headmodel
 - link: /example/source/fem
   title: Compute EEG leadfields using a FEM headmodel
+- link: /tutorial/source/sensitivity_maps
+  title: Comparing MEG sensitivity maps for SQUID and OPM sensor arrays

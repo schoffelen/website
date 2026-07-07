@@ -1,13 +1,15 @@
+- link: /example/other/opm_selection
+  title: How to select a subset of OPM sensor positions from the 144 slots in the
+    FieldLine smart helmet?
 - link: /example/other/opm_sensors
   title: Designing 3D printed helmets for different OPM sensor types
 - link: /example/other/opm_straighthelmet
   title: Designing an OPM helmet with a straight opening at the bottom
-- link: /faq/other/opm_selection
-  title: How do I select a subset of OPM sensor positions from the 144 slots in the
-    FieldLine smart helmet?
 - link: /getting_started/meg/fieldline
   title: Getting started with FieldLine OPM data
 - link: /tutorial/sensor/preprocessing_opm
   title: Preprocessing of Optically Pumped Magnetometer (OPM) data
 - link: /tutorial/source/coregistration_opm
   title: Coregistration of Optically Pumped Magnetometer (OPM) data
+- link: /tutorial/source/sensitivity_maps
+  title: Comparing MEG sensitivity maps for SQUID and OPM sensor arrays

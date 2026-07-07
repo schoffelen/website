@@ -1,5 +1,5 @@
-- link: /faq/other/opm_selection
-  title: How do I select a subset of OPM sensor positions from the 144 slots in the
+- link: /example/other/opm_selection
+  title: How to select a subset of OPM sensor positions from the 144 slots in the
     FieldLine smart helmet?
 - link: /faq/stats/neighbours_neuromag
   title: Why are there multiple neighbour templates for the Neuromag306 system?

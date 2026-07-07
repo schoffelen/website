@@ -3,7 +3,7 @@
 - link: /example/other/bids_meg
   title: Converting an example MEG dataset for sharing in BIDS
 - link: /example/preproc/fixing_a_missing_sensor
-  title: Fixing a missing channel
+  title: Fixing a missing channel in a CTF dataset
 - link: /example/preproc/raw_meeg
   title: Getting started with reading raw EEG or MEG data
 - link: /example/sensor/headmovement_meg
@@ -112,6 +112,8 @@
     of MEG data
 - link: /tutorial/source/minimumnormestimate
   title: Source reconstruction of event-related fields using minimum-norm estimation
+- link: /tutorial/source/sensitivity_maps
+  title: Comparing MEG sensitivity maps for SQUID and OPM sensor arrays
 - link: /tutorial/source/sourcemodel
   title: Creating a source model for source reconstruction of MEG or EEG data
 - link: /tutorial/source/virtual_sensors

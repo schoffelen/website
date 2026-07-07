@@ -5,7 +5,7 @@
 - link: /example/other/bids_meg
   title: Converting an example MEG dataset for sharing in BIDS
 - link: /example/preproc/fixing_a_missing_sensor
-  title: Fixing a missing channel
+  title: Fixing a missing channel in a CTF dataset
 - link: /example/sensor/megrealign
   title: Interpolating data from the CTF151 to the CTF275 sensor array using megrealign
 - link: /faq/experiment/ctf_changeheadloc
@@ -32,3 +32,5 @@
   title: Getting started with CTF data
 - link: /template/gradiometer
   title: Template 3-D gradiometer descriptions
+- link: /tutorial/source/sensitivity_maps
+  title: Comparing MEG sensitivity maps for SQUID and OPM sensor arrays
