@@ -11,9 +11,9 @@ redirect_from:
 
 Optically pumped magnetometers (OPMs) offer flexible and wearable MEG recordings, but are particularly susceptible to environmental noise and movement artifacts. This tutorial demonstrates how to apply various denoising techniques to OPM data using FieldTrip, with a focus on visual evoked field (VEF) recordings.
 
-An important difference between OPMs and most SQUID-based MEG systems is that OPMs are magnetometers, whereas most conventional MEG systems consist of (mostly) gradiometers. Gradiometers are designed to suppress the environmental field, as explained in [this video](https://youtu.be/CPj4jJACeIs?t=350). Magnetometers see more of the environmental noise and consequently the static earth magnetic field can also become visible as noise due to (small) movements. Movements of the head, and thereby of the sensors, cause the OPMs to move through the residual earth magnetic field in the magnetically shielded room (MSR). As head movements are relatively slow, this results in low-frequency noise. In addition, vibrations of the MSR may also add higher frequency components to the noise. Finally, other sources of artifacts, e.g. due to electrical equipment, may also be readily picked up by the MEG sensors.
+An important difference between OPM-based and SQUID-based MEG systems is that OPMs are magnetometers, whereas most conventional MEG systems consist of (mostly) gradiometers. Gradiometers are designed to suppress the environmental field, as explained in [this video](https://youtu.be/CPj4jJACeIs?t=350). Magnetometers see more of the environmental noise and consequently the static earth magnetic field can also become visible as noise due to (small) movements. Movements of the head, and thereby of the sensors, cause the OPMs to move through the residual earth magnetic field in the magnetically shielded room (MSR). As head movements are relatively slow, this results in low-frequency noise. In addition, vibrations of the MSR may also add higher frequency components to the noise. Finally, other sources of artifacts, e.g. due to electrical equipment, may also be readily picked up by the sensors.
 
-This tutorial focusses on the (software-based) denoising of OPM data and evaluates the effect of various types of denoising on the outcome of simple ERF analyses. Following the denoising, you could you could in principle continue with any regular type of sensor, or source level based analysis. For instance, computation of the stimulus onset evoked field, or event-related desynchronization (by means of a time-frequency analysis) could be followed by dipole fitting, or beamformer source reconstruction. 
+This tutorial focusses on the (software-based) denoising of OPM data and evaluates the effect of various types of denoising on the outcome of simple ERF analyses. Following the denoising, you could you could in principle continue with any regular type of sensor- or source-level analysis. For instance, computation of the event-related fields, or event-related (de)synchronization by means of a time-frequency analysis, could be followed by dipole fitting, or beamformer source reconstruction.
 
 In this tutorial you will learn:
 
@@ -23,7 +23,7 @@ In this tutorial you will learn:
 - How to apply adaptive multipole modeling (AMM) for motion artifact cleaning
 - How to compare the effectiveness of different denoising approaches
 
-This tutorial assumes that you are familiar with the basic FieldTrip preprocessing workflow and have some experience with MEG data analysis. It focuses specifically on denoising techniques for OPM data. For a more general introduction to OPM data processing, see the [OPM preprocessing tutorial](/tutorial/sensor/opm_preprocessing).
+This tutorial assumes that you have some experience with MEG data and are familiar with the basic preprocessing workflow. It focuses specifically on denoising techniques for OPM data. For a more general introduction to MEG preprocessing see the [event-related averaging and MEG planar gradient](/tutorial/eventrelatedaveraging) tutorial and for OPM data processing see the [OPM preprocessing tutorial](/tutorial/sensor/opm_preprocessing).
 
 The denoising techniques demonstrated here are particularly relevant for OPM recordings in environments with residual magnetic fields, where movement artifacts and environmental noise can significantly degrade data quality. Note that denoising is not a substitute for good experimental design - proper MSR shielding, nulling coils, and minimizing participant movement are still essential.
 
@@ -35,14 +35,13 @@ OPM sensors are extremely sensitive to magnetic fields, which makes them suscept
 - **Movement artifacts**: OPMs moving through the residual magnetic field generate large artifacts
 - **Biological artifacts**: Cardiac and muscle activity that is not of interest
 
-The denoising techniques that we are going to explore in this tutorial are so-called spatial filtering techniques, which regress out a spatio(-temporal) model of the ambient magnetic field from the data. This model of the ambient magnetic field is obtained from signals of the same sensors as the ones that we want to denoise. As such this strategy has been used in SQUID-MEG analysis as well, specifically in data from Elekta/Neuromag systems. Practically, each sensor's MEG signal will be replaced by a weighted combination of all channels' data. The different flavours of denoising algorithms differ in the way that the spatial weights are computed.
+All denoising techniques that we are going to explore in this tutorial are so-called spatial filtering techniques, which regress out a spatio(-temporal) model of the ambient magnetic field from the data. This model of the ambient magnetic field is obtained from signals of the same sensors as the ones that we want to denoise. As such this strategy has been used in SQUID-MEG analysis as well, specifically in data from Elekta/Neuromag systems. Practically, each sensor's MEG signal will be replaced by a weighted combination of all channels' data. The different flavours of denoising algorithms differ in the way that the spatial weights are computed.
 
-**Signal space projection (SSP)** is an established technique that uses a principal component analysis (PCA) based spatial decomposition of (typically) emptyroom data to remove components that have large variance. Using emptyroom data avoids actual brain signals to contaminate the noise model estimation process, but requires the sensors to be in a position - both within the MSR and in relation to one another - that is as similar as possible as during the actual recording(s) of interest. This may be difficult to achieve in practice, even with a fixed helmet mount, when individual sensors are slightly moved inward in order to touch the scalp surface, or to move outward in order for the participant to move into and out of the helmet. Thus, alternatively, one may consider to use (parts of) the actual recording-of-interest for the estimation of the spatial projectors. Although these data will invariably contain relevant brain-related activity, if the ambient noise is a few orders of magnitude stronger than the brain signals, the signal space projectors may still sufficiently well capture the noise. In FieldTrip this algorithm is implemented in **[ft_denoise_ssp](/reference/ft_denoise_ssp)**.
-
+**Signal space projection (SSP)** is an established technique that uses a principal component analysis (PCA) based spatial decomposition of (typically) emptyroom data to remove components that have large variance. Using emptyroom data avoids actual brain signals to contaminate the noise model estimation process, but requires the sensors to be in a position - both within the MSR and in relation to one another - that is as similar as possible as during the actual recording(s) of interest. For SQUID-MEG this means that different SSP filters are needed for upright and suppine measurements. For OPMs this be difficult to achieve in practice, even with a fixed helmet mount, when individual sensors are slightly moved inward in order to touch the scalp surface, or to move outward in order for the participant to move into and out of the helmet. Thus, alternatively, one may consider to use (parts of) the actual recording-of-interest for the estimation of the spatial projectors. Although these data will invariably contain relevant brain-related activity, if the ambient noise is a few orders of magnitude stronger than the brain signals, the signal space projectors may still sufficiently well capture the noise. In FieldTrip this algorithm is implemented in **[ft_denoise_ssp](/reference/ft_denoise_ssp)**.
 
 **Harmonic field correction (HFC)** creates a model of the low spatial frequency components of the magnetic field distribution. This approach requires geometric information, the relative sensor positions, and is based on the underlying assumption that the low spatial frequency components originate from (ambient) sources that are located far away from the sensors. In FieldTrip this algorithm is implemented in **[ft_denoise_hfc](/reference/ft_denoise_hfc)**.
 
-**Signal Space Separation (SSS)** is an established technique for cleaning Elekta/Neuromag data, but can theoretically be applied to other sensor configurations as well. The approach creates a spatial model, separating signal contributions originating from inside and outside the sensor-helmet, followed by an optional temporal regression step for further cleaning. It requires geometric information of the sensors. In FieldTrip this algorithm is implemented in **[ft_denoise_sss](/reference/ft_denoise_sss)**.
+**Signal Space Separation (SSS)** is an established technique for cleaning Megin/Elekta/Neuromag data and also known as MaxFilter, but can theoretically be applied to other sensor configurations as well. The approach creates a spatial model, separating signal contributions originating from inside and outside the sensor-helmet, followed by an optional temporal regression step for further cleaning. It requires geometric information of the sensors. In FieldTrip this algorithm is implemented in **[ft_denoise_sss](/reference/ft_denoise_sss)**.
 
 **Adaptive multipole modeling (AMM)** is a variant of SSS, using slightly different heuristics, such as the basis functions for the model. It requires geometric information of the sensors. In FieldTrip this algorithm is implemented in **[ft_denoise_amm](/reference/ft_denoise_amm)**.
 
@@ -71,7 +70,6 @@ The tutorial follows these steps:
 We start by loading the emptyroom data. This allows us to characterize the noise environment and identify potential noise components that can be removed from the task data.
 
 ```matlab
-%%
 datadir = 'sub-001/ses-opm01/meg'; % NOTE this needs to be changed to match your computer
 dataset = fullfile(datadir, 'sub-001_ses-opm01_task-emptyroom_meg.fif');
 
@@ -107,10 +105,10 @@ Here we use **[ft_freqanalysis](/reference/ft_freqanalysis)** with multitaper fr
 {% include image src="/assets/img/tutorial/denoising_opm/emptyroom_spectrum1.png" width="500" %}
 
 {% include markup/yellow %}
-The power spectrum of the emptyroom data helps identify characteristic noise peaks. In a well-shielded MSR, you might see peaks at line noise frequencies (50/60 Hz and harmonics), but residual environmental noise may still be present, especially at lower frequencies.
+The power spectrum of the emptyroom data helps identify characteristic noise peaks. In a well-shielded MSR, you might see peaks at line noise frequencies (50 or 60 Hz and harmonics), but residual environmental noise may still be present, especially at lower frequencies.
 {% include markup/end %}
 
-To reduce the variance in the spectrum, we can cut the data into shorter segments, compute the spectrum per segment, and then average across segments. This is very similar to Welch's periodogram method:
+To reduce the variance in the spectrum, we can cut the data into shorter segments, compute the spectrum per segment, and then average across segments. This is very similar to [Welch's periodogram](https://en.wikipedia.org/wiki/Welch%27s_method) method:
 
 ```matlab
 cfg         = [];
@@ -183,10 +181,10 @@ Examine the PCA components in the icabrowser interface. Which components show sm
 {% include markup/end %}
 
 {% include markup/yellow %}
-Note: Some of the PCs may show smooth patterns, but they are not necessarily the first ordered PCs. For example, component 2 might be not a good candidate for SSP. This indicates that the quality of the (emptyroom) recording may be insufficient to automatically capture the main noise components in the first few PCs. This is relevant for the algorithmic implementation of the SSP-algorithm below, which will remove the first 'N' spatial components from the data.
+Note: Some of the PCs may show smooth patterns, but they are not necessarily the first ordered PCs. For example, component 2 might be not a good candidate for SSP. This indicates that the quality of the (emptyroom) recording may be insufficient to automatically capture the main noise components in the first few PCs. This is relevant for the algorithmic implementation of the SSP-algorithm below, which will by default remove the first 'N' spatial components from the data.
 {% include markup/end %}
 
-The previous analysis showed that the raw emptyroom data might be too noisy to reliably identify the main noise components in the first 'N' PCs. Part of this may be caused by high variance noise characteristics, e.g. powerline related artifacts may be sensor specific. We can improve this by applying appropriate filters:
+The previous analysis showed that the raw emptyroom data might be too noisy to reliably identify the main noise components in the first 'N' PCs. Part of this may be caused by high variance noise characteristics, e.g. powerline related artifacts may be sensor specific. We can improve this by applying appropriate time-domain filters:
 
 ```matlab
 cfg = [];
@@ -244,7 +242,7 @@ cfg.demean = 'yes';
 cfg.padding = 4; 
 cfg.baselinewindow = [-0.1 0];
 cfg.bsfilter = 'yes';
-cfg.bsfreq   = [58 62];
+cfg.bsfreq  = [58 62];
 cfg.bsfilttype = 'firws';
 cfg.channel = data_er.label;
 data = ft_preprocessing(cfg);
@@ -262,7 +260,7 @@ tlck = ft_timelockanalysis(cfg, data);
 cfg        = [];
 cfg.layout = 'fieldlinebeta2bz_helmet.mat';
 cfg.linecolor = 'spatial';
-cfg.viewmode  = 'butterfly';
+cfg.viewmode = 'butterfly';
 ft_multiplotER(cfg, tlck);
 ```
 

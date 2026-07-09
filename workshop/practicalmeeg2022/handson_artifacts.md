@@ -480,5 +480,5 @@ Note that ICA assumes a stationary mixing of all the (brain and artifact) source
 {% include markup/skyblue %}
 Use **[ft_componentanalysis](/reference/ft_componentanalysis)**  and **[ft_rejectcomponent](/reference/ft_rejectcomponent)** to remove the eye- and heart-related artifacts from the EEG and the MEG data.
 
-You can follow the tutorial on [Cleaning artifacts using ICA](/tutorial/preproc/ica_artifact_cleaning).
+You can follow the tutorial on [cleaning artifacts in MEG data using ICA](/tutorial/preproc/ica_artifact_cleaning).
 {% include markup/end %}
