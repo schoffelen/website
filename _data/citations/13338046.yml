@@ -1,0 +1,59 @@
+articleids:
+- idtype: pmid
+  value: '42062432'
+- idtype: doi
+  value: 10.1038/s42003-026-10108-z
+- idtype: pii
+  value: 10.1038/s42003-026-10108-z
+- idtype: pmcid
+  value: PMC13338046
+authors:
+- authtype: Author
+  name: Jeong W
+- authtype: Author
+  name: Kommineni A
+- authtype: Author
+  name: Avramidis K
+- authtype: Author
+  name: McDaniel C
+- authtype: Author
+  name: Berry D
+- authtype: Author
+  name: Hughes M
+- authtype: Author
+  name: McGee T
+- authtype: Author
+  name: Kaiser E
+- authtype: Author
+  name: Byrd D
+- authtype: Author
+  name: Habibi A
+- authtype: Author
+  name: Cahn BR
+- authtype: Author
+  name: Blank IA
+- authtype: Author
+  name: Lerman K
+- authtype: Author
+  name: Pantazis D
+- authtype: Author
+  name: Kadiri SR
+- authtype: Author
+  name: Medani T
+- authtype: Author
+  name: Narayanan S
+- authtype: Author
+  name: Leahy RM
+epubdate: 2026 Apr 30
+fulljournalname: Communications biology
+issue: '1'
+pages: ''
+pmclivedate: 2026/07/08
+printpubdate: ''
+pubdate: 2026 Apr 30
+sortdate: 2026/04/30 00:00
+source: Commun Biol
+title: Time-resolved EEG decoding reveals altered neural dynamics of affective semantic
+  evaluation in depression and suicidality.
+uid: '13338046'
+volume: '9'

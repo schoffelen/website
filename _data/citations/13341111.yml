@@ -1,0 +1,39 @@
+articleids:
+- idtype: pmid
+  value: '42411060'
+- idtype: doi
+  value: 10.7554/eLife.107088
+- idtype: pii
+  value: '107088'
+- idtype: pmcid
+  value: PMC13341111
+authors:
+- authtype: Author
+  name: Nguyen T
+- authtype: Author
+  name: Bigand F
+- authtype: Author
+  name: Reisner S
+- authtype: Author
+  name: Koul A
+- authtype: Author
+  name: Bianco R
+- authtype: Author
+  name: Markova G
+- authtype: Author
+  name: Hoehl S
+- authtype: Author
+  name: Novembre G
+epubdate: 2026 Jul 7
+fulljournalname: eLife
+issue: ''
+pages: ''
+pmclivedate: 2026/07/08
+printpubdate: ''
+pubdate: 2026 Jul 7
+sortdate: 2026/07/07 00:00
+source: Elife
+title: Development of auditory and spontaneous movement responses to music over the
+  first postnatal year.
+uid: '13341111'
+volume: '14'

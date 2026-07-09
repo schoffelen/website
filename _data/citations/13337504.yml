@@ -1,0 +1,43 @@
+articleids:
+- idtype: pmid
+  value: '42416353'
+- idtype: pmcid
+  value: PMC13337504
+- idtype: doi
+  value: 10.3389/fninf.2026.1791461
+authors:
+- authtype: Author
+  name: Wyczesany M
+- authtype: Author
+  name: Spadone S
+- authtype: Author
+  name: Górski T
+- authtype: Author
+  name: Łabaza A
+- authtype: Author
+  name: Domagala M
+- authtype: Author
+  name: Kaminski M
+- authtype: Author
+  name: Ligeza TS
+- authtype: Author
+  name: Capotosto P
+- authtype: Author
+  name: Kroker T
+- authtype: Author
+  name: Junghöfer M
+- authtype: Author
+  name: Della Penna S
+epubdate: 2026 Jun 23
+fulljournalname: Frontiers in neuroinformatics
+issue: ''
+pages: '1791461'
+pmclivedate: 2026/07/08
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/23 00:00
+source: Front Neuroinform
+title: 'ASCT: a pipeline for standardized analysis of MEG/EEG directional connectivity.
+  Practical guidelines for applications of source-based Directed Transfer Function.'
+uid: '13337504'
+volume: '20'

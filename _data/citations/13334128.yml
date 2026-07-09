@@ -1,0 +1,29 @@
+articleids:
+- idtype: pmid
+  value: '42402999'
+- idtype: doi
+  value: 10.1002/hbm.70601
+- idtype: pmcid
+  value: PMC13334128
+authors:
+- authtype: Author
+  name: Carretié L
+- authtype: Author
+  name: DaSilva-Lárez VE
+- authtype: Author
+  name: Branchadell V
+- authtype: Author
+  name: Fernández-Folgueiras U
+epubdate: ''
+fulljournalname: Human brain mapping
+issue: '10'
+pages: e70601
+pmclivedate: 2026/07/07
+printpubdate: 2026 Jul
+pubdate: 2026 Jul
+sortdate: 2026/07/01 00:00
+source: Hum Brain Mapp
+title: Emotional Context Modulates the Response to Somatosensory Stimuli Within 20
+  milliseconds.
+uid: '13334128'
+volume: '47'

@@ -1,0 +1,65 @@
+articleids:
+- idtype: pmid
+  value: '41826711'
+- idtype: doi
+  value: 10.1038/s41593-026-02228-w
+- idtype: pii
+  value: 10.1038/s41593-026-02228-w
+- idtype: pmcid
+  value: PMC13337495
+authors:
+- authtype: Author
+  name: Ren J
+- authtype: Author
+  name: Jiang C
+- authtype: Author
+  name: Zhang W
+- authtype: Author
+  name: Dahmani L
+- authtype: Author
+  name: Shen L
+- authtype: Author
+  name: Zhang F
+- authtype: Author
+  name: Li S
+- authtype: Author
+  name: He C
+- authtype: Author
+  name: Yin Y
+- authtype: Author
+  name: Fu X
+- authtype: Author
+  name: Huang J
+- authtype: Author
+  name: Long Y
+- authtype: Author
+  name: Liu D
+- authtype: Author
+  name: Guo Y
+- authtype: Author
+  name: Liu Y
+- authtype: Author
+  name: Xu S
+- authtype: Author
+  name: Meng F
+- authtype: Author
+  name: Zhang J
+- authtype: Author
+  name: Wang D
+- authtype: Author
+  name: Li L
+- authtype: Author
+  name: Liu H
+epubdate: 2026 Mar 13
+fulljournalname: Nature neuroscience
+issue: '7'
+pages: 1749-1761
+pmclivedate: 2026/07/08
+printpubdate: 2026 Jul
+pubdate: 2026 Jul
+sortdate: 2026/07/01 00:00
+source: Nat Neurosci
+title: Circuit response to neuromodulation characterized with simultaneous deep brain
+  stimulation and precision neuroimaging in humans.
+uid: '13337495'
+volume: '29'

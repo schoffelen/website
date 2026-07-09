@@ -1,0 +1,29 @@
+articleids:
+- idtype: pmid
+  value: '42395322'
+- idtype: pmcid
+  value: PMC13323323
+- idtype: doi
+  value: 10.3389/fnins.2026.1830546
+authors:
+- authtype: Author
+  name: Liu Q
+- authtype: Author
+  name: Dang P
+- authtype: Author
+  name: Li H
+- authtype: Author
+  name: Wang N
+epubdate: 2026 Jun 18
+fulljournalname: Frontiers in neuroscience
+issue: ''
+pages: '1830546'
+pmclivedate: 2026/07/03
+printpubdate: ''
+pubdate: '2026'
+sortdate: 2026/06/18 00:00
+source: Front Neurosci
+title: Relationship between spontaneous EEG oscillations at 7 and 45 days of acute
+  plateau exposure and the plateau acclimatization index.
+uid: '13323323'
+volume: '20'

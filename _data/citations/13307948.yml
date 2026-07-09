@@ -1,0 +1,37 @@
+articleids:
+- idtype: pmid
+  value: '42367869'
+- idtype: pmcid
+  value: PMC13307948
+- idtype: doi
+  value: 10.64898/2026.06.15.732267
+- idtype: pii
+  value: 2026.06.15.732267
+authors:
+- authtype: Author
+  name: Ding Y
+- authtype: Author
+  name: Karrenbach M
+- authtype: Author
+  name: Johnson Z
+- authtype: Author
+  name: Wang H
+- authtype: Author
+  name: Zhang J
+- authtype: Author
+  name: Wittenberg GF
+- authtype: Author
+  name: He B
+epubdate: 2026 Jun 18
+fulljournalname: 'bioRxiv : the preprint server for biology'
+issue: ''
+pages: ''
+pmclivedate: 2026/06/27
+printpubdate: ''
+pubdate: 2026 Jun 18
+sortdate: 2026/06/18 00:00
+source: bioRxiv
+title: Adaptive Neural Reorganization Enables Real-Time Finger-Level Robotic Control
+  in BCI-Naïve Stroke Survivors.
+uid: '13307948'
+volume: ''
