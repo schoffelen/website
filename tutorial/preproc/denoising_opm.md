@@ -344,7 +344,7 @@ The **[ft_denoise_amm](/reference/ft_denoise_amm)** function applies AMM with a 
 Compute the ERF for the HFC and AMM denoised data, and explore the result of the cleaning. If time and enthusiasm permits, you can also play around with the parameters of the cleaning (e.g. `cfg.order` for HFC and/or `cfg.amm.thr` for AMM), and evaluate the effect on the resulting ERFs. Consult the help section of the respective functions for more information.
 {% include markup/end %}
 
-## Summary and conclusion
+## Summary and suggested further reading
 
 This tutorial demonstrated several denoising techniques for OPM data:
 
@@ -354,9 +354,9 @@ This tutorial demonstrated several denoising techniques for OPM data:
 
 Each method has its strengths and weaknesses:
 
-- **SSP** is good at removing consistent noise patterns and does not need sensor position information. Can be used in combination with emptyroom data but requires the sensors to be in the same position as during the measurements-of-interest.
-- **HFC** is effective for low spatial frequency environmental noise but requires precise sensor position information for accurate modelling.
-- **AMM** is effective in removing noise whose spatiotemporal profile changes over time but requires precise sensor position information and runs the risk of overfitting
+- **SSP** is good at removing consistent noise patterns and does not need sensor position information. Can be used in combination with emptyroom data but requires the sensors to be in the same position as during the measurements-of-interest. It also does not work for head-free OPM recordings with movements.
+- **HFC** is effective for low spatial frequency noise but requires precise sensor position information for accurate modelling.
+- **AMM** is effective in removing noise whose spatiotemporal profile changes over time but requires precise sensor position information and runs the risk of overfitting.
 
 ### See also these tutorials
 
