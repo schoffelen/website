@@ -317,7 +317,7 @@ Plot the result
 Compare the results with figure 3. Pay special attention to the noise bias.
 {% include markup/end %}
 
-## Summary and further reading
+## Summary and suggested further reading
 
 This tutorial demonstrated how to compute one specific measure of connectivity. Using **[ft_connectivityanalysis](/reference/ft_connectivityanalysis)** you can also compute other undirected and directed connectivity measures, such as Granger causality. This is explained in more detail in the [connectivity tutorial](/tutorial/connectivity).
 

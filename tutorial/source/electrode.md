@@ -184,7 +184,7 @@ The electrode location are now digitized on the outer surface of the scanned sur
     cfg.elec       = elec;
     elec = ft_electroderealign(cfg);
 
-## Summary and further reading
+## Summary and suggested further reading
 
 In this tutorial we demonstrated how to extract electrode positions from a 3D scanned head surface. The resulting electrode model can be used for volume conduction model, or in the construction of a [2D layout](/tutorial/plotting/layout) for data visualization.
 

@@ -260,10 +260,10 @@ For an introduction to how you can deal with artifacts in FieldTrip in general, 
 
 More information on dealing with artifacts can also be found in some example scripts and frequently asked questions. Furthermore, this topic is often discussed on the [email discussion list](/discussion_list) which can be searched [like this](https://www.google.com/search?q=site%3Amailman.science.ru.nl%2Fpipermail%2Ffieldtrip&q=artifacts).
 
-#### Example scripts
+### See also these examples
 
 {% include seealso category="example" tag1="artifact" %}
 
-#### Frequently asked questions
+### See also these frequently asked questions
 
 {% include seealso category="faq" tag1="artifact" %}

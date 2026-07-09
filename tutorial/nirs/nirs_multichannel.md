@@ -440,7 +440,7 @@ Per default FieldTrip uses the minimum and the maximum in the selected part of t
 
 _Figure 12: Topographical representation of the oxi- and deoxy-hemoglobin signal changes following the deviant tone._
 
-## Summary and conclusion
+## Summary and suggested further reading
 
 In this tutorial we have processed a functional near-infrared spectroscopy data set consisting of multiple channels.
 

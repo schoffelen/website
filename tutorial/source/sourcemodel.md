@@ -385,7 +385,7 @@ Keep in mind that the .pos field in the source models are subject specific. When
 
 If you performed source reconstruction on the cortical surface, and you used the recipe explained earlier in this tutorial, single-subject data can be directly compared across subjects, because the dipole locations are surface-registered to a template.
 
-## Summary and further reading
+## Summary and suggested further reading
 
 This tutorial explained how to build a source model that can be used for source reconstruction of EEG or MEG measurements.
 

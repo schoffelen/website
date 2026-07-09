@@ -170,7 +170,7 @@ But we would like to know where the difference between the conditions can be loc
 
 _Figure 7. One frame from the movie that shows the differences of the two source reconstructions_
 
-## Summary and further readings
+## Summary and suggested further reading
 
 In this tutorial we showed how to do MNE source reconstruction method on a single subject data. We compared the averaged ERF in two conditions and we reconstructed the sources and we calculated the difference of the two source reconstruction. We showed also how you can visualize the results.
 

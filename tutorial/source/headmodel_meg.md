@@ -190,7 +190,7 @@ What is the difference between the head models?
 In exercise 1, you created a head model with method 'singlesphere'. How is its geometrical description defined? What is the difference between the fields of the single sphere and single-shell model which contain the geometrical description?
 {% include markup/end %}
 
-## Summary and further reading
+## Summary and suggested further reading
 
 In this tutorial, it was explained how to build a volume conduction model of the head using a single subject anatomical mri and the single shell method developed by Nolte (2003). In the exercises, we compared the head model to a single sphere that was fitted on the inside brain surface.
 

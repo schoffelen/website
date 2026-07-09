@@ -248,7 +248,7 @@ Rather than looking at undirected coherence, the virtual channel level data can 
 Let's say you wanted to look at cortico-cortical connectivity, e.g., interactions between visual and motor cortex in a particular frequency band. How would you approach this?
 {% include markup/end %}
 
-## Summary and further reading
+## Summary and suggested further reading
 
 This tutorial demonstrates how to compute connectivity measures between two time series. If you want to learn how to make a distributed representation of connectivity throughout the whole brain, you may want to continue with the [corticomuscular coherence tutorial](/tutorial/connectivity/coherence).
 

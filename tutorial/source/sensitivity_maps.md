@@ -510,7 +510,7 @@ The same procedure can be applied to compare other MEG systems and OPM sensor pl
 
 This tutorial did not deal with the differences in the noise of the individual sensors, or the different sensitivity to environmental noise. It also only consisted of forward solutions of the leadfield matrix given hypothetical sources on the cortical sheet. If you are interested in the influence of the sensitivity and noise differences and/or source reconstruction of real data, you could continue with the [beamforming](/tutorial/source/beamforming) or [minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
-## See also
+## Suggested further reading
 
 See also these tutorials on source reconstruction:
 

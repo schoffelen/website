@@ -475,7 +475,7 @@ Note that the scalp is unrealistically thick compared to the skull; this is beca
 In exercise 2, you created a head model with method 'concentricspheres'. How is its geometrical description defined? What is the difference between the geometrical description of the concentric spheres model and BEM model?
 {% include markup/end %}
 
-## Summary and further reading
+## Summary and suggested further reading
 
 This tutorial explained how to build a volume conduction model of the head using a single subject anatomical MRI and the boundary element method (BEM) developed by Oostendorp and van Oosterom (1989). In the exercises, we also compared the BEM model to a concentric spheres model that was fitted on the scalp, skull and brain surfaces.
 

@@ -296,7 +296,7 @@ Below we plot the averaged O2Hb and HHb traces from A-10 seconds to A+35 seconds
 
 _Figure 5: Averaged O2Hb and HHb traces. This figure closely resembles the text-book fNIRS model of cortical activation, which results from an increase in oxygen demand from the tissue instigating an increase in O2Hb due to neuro-vascular coupling as depicted by Scholkmann et al. in figure 5 of their [2014 review article](http://www.sciencedirect.com/science/article/pii/S1053811913004941)._
 
-## Summary and conclusion
+## Summary and suggested further reading
 
 We explained the preprocessing steps for a single channel in an fNIRS dataset using FieldTrip. If you would like to read further on how to preprocess an fNIRS dataset with multiple channels, you can continue with the [fNIRS multi-channel tutorial](/tutorial/nirs/nirs_multichannel). When you have more questions about the topic of any tutorial, do not forget to check the [frequently asked questions](/faq) and the [example scripts](/example).
 

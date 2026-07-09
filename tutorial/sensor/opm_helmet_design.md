@@ -1338,7 +1338,7 @@ If you use this layout with **[ft_multiplotER](/reference/ft_multiplotER)** or *
 The channels in the x and y-direction are sensitive for magnetic fields in the x and y-direction of the sensor itself, which is not necessarily in the x or y-direction of the head coordinates or of the figure on screen. The layout above that combines the channels in the x, y, and z-orientations might therefore be useful for multiplotting (e.g. plotting an ERF at every sensor location), but should **not** be used for topoplotting.
 {% include markup/end %}
 
-## Summary and conclusion
+## Summary and suggested further reading
 
 This tutorial explains how to design 3D‑printable OPM helmets. We started by creating helmet shells from spherical geometric templates, from individual MRIs, or for population averages. We then looked at different ways of distributing OPM sensors using extended 10–20, equidistant, or interactive placement. In part 3 we looked at optimizing sensor orientations and rotations (important for bi‑ and tri-axial sensors) and in part 4 we assembled the actual helmet to be 3D printed by combining the shell, the holes and the sensor holders. Finally in the last part we constructed the grad structure for source modelling, and the layout for topographic plotting.
 
