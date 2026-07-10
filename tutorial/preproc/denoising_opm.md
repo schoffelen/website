@@ -354,9 +354,17 @@ This tutorial demonstrated several denoising techniques for OPM data:
 
 Each method has its strengths and weaknesses:
 
-- **SSP** is good at removing consistent noise patterns and does not need sensor position information. Can be used in combination with emptyroom data but requires the sensors to be in the same position as during the measurements-of-interest. It also does not work for head-free OPM recordings with movements.
-- **HFC** is effective for low spatial frequency noise but requires precise sensor position information for accurate modelling.
-- **AMM** is effective in removing noise whose spatiotemporal profile changes over time but requires precise sensor position information and runs the risk of overfitting.
+- [**SSP**](https://link.springer.com/article/10.1007/Bf02534144) is good at removing consistent noise patterns and does not need sensor position information. Can be used in combination with emptyroom data but requires the sensors to be in the same position as during the measurements-of-interest. It also does not work for head-free OPM recordings with movements.
+- [**HFC**](https://doi.org/10.1016/j.neuroimage.2022.119338) is effective for low spatial frequency noise but requires precise sensor position information for accurate modelling.
+- [**AMM**](https://doi.org/10.1002/hbm.26596) is effective in removing noise whose spatiotemporal profile changes over time but requires precise sensor position information and runs the risk of overfitting.
+
+Further reading material about the denoising of OPM data: 
+- [Interference suppression techniques for OPM-based MEG](https://doi.org/10.1016/j.neuroimage.2021.118834)
+- [Theoretical advantages of a triaxial OPM-MEG system](https://doi.org/10.1016/j.neuroimage.2021.118025)
+- [Noise and artifact suppression in SQUID and wearable OPM-MEG](https://doi.org/10.1016/j.neuroimage.2025.121403)
+- [Optimal configuration of on-scalp OPMs with fixed channel counts](https://doi.org/10.1162/IMAG.a.22) 
+- [DSSP](https://doi.org/10.1088/1741-2560/13/3/036007)
+- [SSS](https://doi.org/10.1109/TSP.2005.853302)
 
 ### See also these tutorials
 
