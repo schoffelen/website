@@ -25,7 +25,7 @@ This tutorial contains hands-on material that we use for the [MEG/EEG toolkit co
 
 ## Background
 
-In the [Time-Frequency Analysis tutorial](/tutorial/sensor/timefrequencyanalysis) we identified strong oscillations in the beta band in a language paradigm. The goal of this section is to identify the sources responsible for producing this oscillatory activity. We will apply a beamformer technique. This is a spatially adaptive filter, allowing us to estimate the amount of activity at any given location in the brain. The inverse filter is based on minimizing the source power (or variance) at a given location, subject to 'unit-gain constraint'. This latter part means that, if a source had power of amplitude 1 and was projected to the sensors by the lead field, the inverse filter applied to the sensors should then reconstruct power of amplitude 1 at that location. Beam forming assumes that sources in different parts of the brain are not temporally correlated.
+In the [time-frequency analysis tutorial](/tutorial/sensor/timefrequencyanalysis) we identified strong oscillations in the beta band in a language paradigm. The goal of this section is to identify the sources responsible for producing this oscillatory activity. We will apply a beamformer technique. This is a spatially adaptive filter, allowing us to estimate the amount of activity at any given location in the brain. The inverse filter is based on minimizing the source power (or variance) at a given location, subject to 'unit-gain constraint'. This latter part means that, if a source had power of amplitude 1 and was projected to the sensors by the lead field, the inverse filter applied to the sensors should then reconstruct power of amplitude 1 at that location. Beam forming assumes that sources in different parts of the brain are not temporally correlated.
 
 The brain is divided into a regular three dimensional grid and the source strength for each grid point is computed. The method applied in this example is termed Dynamical Imaging of Coherent Sources (DICS) and the estimates are calculated in the frequency domain (Gross ET al. 2001). Other beamformer methods rely on source estimates calculated in the time domain, e.g., the Linearly Constrained Minimum Variance (LCMV) and Synthetic Aperture Magnetometry (SAM) methods (van Veen et al., 1997; Robinson and Cheyne, 1997). These methods produce a 3D spatial distribution of the power of the neuronal sources. This distribution is then overlaid on a structural image of the subject's brain. Furthermore, these distributions of source power can be subjected to statistical analysis. It is always ideal to contrast the activity of interest against some control/baseline activity. Options for this will be discussed below, but it is best to keep this in mind when designing your experiment from the start, rather than struggle to find a suitable control/baseline after data collection.
 
@@ -142,7 +142,7 @@ Then prepare the head model from the segmented brain surface:
 {% include markup/yellow %}
 **EEG headmodels**
 
-The volume conduction model created here is MEG specific and cannot be used for EEG source reconstruction. If you are interested in EEG source reconstruction methods, you can go to the corresponding [EEG headmodel tutorial](/tutorial/source/headmodel_eeg).
+The volume conduction model created here is MEG specific and cannot be used for EEG source reconstruction. If you are interested in EEG source reconstruction methods, you can go to the corresponding [eeg headmodel tutorial](/tutorial/source/headmodel_eeg).
 
 For example, if you want to do a beamformer source reconstruction on EEG data, you have to pay special attention to the EEG referencing. The forward model will be made with a common average reference (except in some rare cases like with bipolar iEEG electrode montages), i.e. the mean value over all electrodes is zero. Consequently, this also has to be true in your data.
 
@@ -188,7 +188,7 @@ If you are not contrasting the activity of interest against another condition or
 
 ## Source Analysis
 
-At this point we have computed all necessary ingredients for the beamformer source analysis. As mentioned in [Background](/tutorial/beamformer#background), it is ideal to contrast the activity of interest against some control.
+At this point we have computed all necessary ingredients for the beamformer source analysis. As mentioned in the [background](/tutorial/beamformer#background) section, it is ideal to contrast the activity of interest against some control.
 
 1.  Suitable control windows are, for example:
     - Activity contrasted with baseline (example shown here dataPost - dataPre)
@@ -216,7 +216,7 @@ Using the cross-spectral density and the lead field matrices a spatial filter is
 
     sourcePost_nocon = ft_sourceanalysis(cfg, freqPost);
 
-The purpose of cfg.dics.projectnoise will become more clear in the section on [Neural Activity Index](/tutorial/beamformer#neural-activity-index). The purpose of lambda is discussed in Exercise 6.
+The purpose of cfg.dics.projectnoise will become more clear in the section on the [neural activity index](/tutorial/beamformer#neural-activity-index). The purpose of lambda is discussed in Exercise 6.
 
 Save the output:
 

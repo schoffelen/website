@@ -260,7 +260,7 @@ In the resultant plot, each row (corresponding to a value of on the y-axis) corr
 
 ## Classification of time-frequency data
 
-The techniques we explored for 3-D _[samples x chan x time]_ data seamlessly generalize to higher-dimensional datasets. For instance, let us consider 4-D _[samples x chan x freq x time]_ data. We create such a dataset by performing a time-frequency analysis on the timelocked data (see [Time-frequency analysis using Hanning window, multitapers and wavelets](http://www.fieldtriptoolbox.org/tutorial/timefrequencyanalysis/) for details on time-frequency analysis).
+The techniques we explored for 3-D _[samples x chan x time]_ data seamlessly generalize to higher-dimensional datasets. For instance, let us consider 4-D _[samples x chan x freq x time]_ data. We create such a dataset by performing a time-frequency analysis on the timelocked data (see the tutorial on [time-frequency analysis using Hanning window, multitapers and wavelets](/tutorial/timefrequencyanalysis) for details on time-frequency analysis).
 
       cfg              = [];
       cfg.output       = 'pow';

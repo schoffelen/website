@@ -362,7 +362,7 @@ If you would like to learn more about plotting of time-frequency representations
 
 This tutorial showed how to do time-frequency analysis on a single's subject MEG data and how to plot the time-frequency representations. There were 4 methods shown for calculating time-frequency representations and 3 functions for plotting the results.
 
-After having finished this tutorial on time-frequency analysis, you can continue with the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) tutorial if you are interested in the source-localization of the power changes or the [Cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial if you are interested how to do statistics on the time-frequency representations.
+After having finished this tutorial on time-frequency analysis, you can continue with the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) tutorial if you are interested in the source-localization of the power changes or the [cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial if you are interested how to do statistics on the time-frequency representations.
 
 ### See also these frequently asked questions
 

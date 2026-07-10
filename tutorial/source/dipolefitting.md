@@ -10,9 +10,9 @@ redirect_from:
 
 ## Introduction
 
-In this tutorial you can find information about how to fit dipole models to the event-related fields (MEG) and potentials (EEG) of a single subject. We will be working on the dataset described in the [Preprocessing and event-related activity](/tutorial/sensor/preprocessing) tutorial, and we will use the anatomical images that belong to the same subject. We will repeat some code here to select the trials, preprocess the data and compute averages that are suitable for dipole fitting. We assume that preprocessing and event-related averaging is already clear for the reader.
+In this tutorial you can find information about how to fit dipole models to the event-related fields (MEG) and potentials (EEG) of a single subject. We will be working on the dataset described in the [preprocessing and event-related activity](/tutorial/sensor/preprocessing) tutorial, and we will use the anatomical images that belong to the same subject. We will repeat some code here to select the trials, preprocess the data and compute averages that are suitable for dipole fitting. We assume that preprocessing and event-related averaging is already clear for the reader.
 
-This tutorial will not show how to combine source-level data over multiple subjects. It will also not describe how to do source-localization of oscillatory activation. You can check the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamforming) tutorial if you are interested in the later.
+This tutorial will not show how to combine source-level data over multiple subjects. It will also not describe how to do source-localization of oscillatory activation. You can check the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamforming) tutorial if you are interested in the later.
 
 {% include markup/skyblue %}
 This tutorial contains the hands-on material of the [NatMEG workshop](/workshop/natmeg2014) and is complemented by this lecture.
@@ -24,7 +24,7 @@ This tutorial contains the hands-on material of the [NatMEG workshop](/workshop/
 
 {% include /shared/tutorial/sourcelocalization_background.md %}
 
-In the [Preprocessing and event-related activity](/tutorial/sensor/preprocessing) tutorial, time-locked averages of event-related fields of the standard and deviant conditions were computed and it was shown that there is a difference between the conditions. The topographical distribution of the ERFs belonging to each condition to the difference have been plotted. The aim of this tutorial is to localise the sources of the underlying neuronal activity. For this we need a source model and a volume conduction model.
+In the [preprocessing and event-related activity](/tutorial/sensor/preprocessing) tutorial, time-locked averages of event-related fields of the standard and deviant conditions were computed and it was shown that there is a difference between the conditions. The topographical distribution of the ERFs belonging to each condition to the difference have been plotted. The aim of this tutorial is to localise the sources of the underlying neuronal activity. For this we need a source model and a volume conduction model.
 
 ### Source model
 
@@ -264,7 +264,7 @@ Now that we have the meshes, we use them to compute the volume conduction model.
 
 ### Process the MEG data
 
-The processing of the MEG dataset is done similar to the [Preprocessing and event-related activity in MEG and EEG data](/tutorial/sensor/preprocessing) tutorial. It requires the custom trial function [trialfun_oddball_stimlocked.m](https://download.fieldtriptoolbox.org/workshop/natmeg2014/trialfun_oddball_stimlocked.m) to be on your MATLAB path.
+The processing of the MEG dataset is done similar to the [preprocessing and event-related activity in MEG and EEG data](/tutorial/sensor/preprocessing) tutorial. It requires the custom trial function [trialfun_oddball_stimlocked.m](https://download.fieldtriptoolbox.org/workshop/natmeg2014/trialfun_oddball_stimlocked.m) to be on your MATLAB path.
 
 #### Segment and read the MEG data
 
@@ -936,7 +936,7 @@ We demonstrated how to use dipole fitting to estimate the location and time cour
 
 This tutorial demonstrates how you can use different assumptions to get stable and meaningful dipole fit locations. However, it also demonstrates that in the dipole fitting procedure there are many choices than can be made, and that it is not easy to get all parameters right for a meaningful dipole fit solution. This explains why commercial software packages such as [BESA](http://www.besa.de) have elaborate graphical user interfaces in which you can more easily explore the effect of the constraints on the dipoles, and why sequential dipole fitting strategies are required to construct dipole models for more complicated source configurations.
 
-More details on constructing volume conduction models of the head can be found [here for MEG](/tutorial/source/headmodel_meg) and [here for EEG](/tutorial/source/headmodel_meg). Other tutorials are available that demonstrate the [MNE](/tutorial/source/minimumnormestimate) and [Beamformer](/tutorial/source/beamformer) methods. An alternative method for computing the activity time series at regions of interest using beamformers is described [here](/tutorial/source/virtual_sensors).
+More details on constructing volume conduction models of the head can be found [here for MEG](/tutorial/source/headmodel_meg) and [here for EEG](/tutorial/source/headmodel_meg). Other tutorials are available that demonstrate the [MNE](/tutorial/source/minimumnormestimate) and [beamformer](/tutorial/source/beamformer) methods. An alternative method for computing the activity time series at regions of interest using beamformers is described [here](/tutorial/source/virtual_sensors).
 
 ### See also these tutorials
 

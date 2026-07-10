@@ -9,11 +9,11 @@ redirect_from:
 
 ## Introduction
 
-This tutorial describes how to construct a volume conduction model of the head (head model) based on an individual subject's MRI. We will use the anatomical images that belong to the same subject whose data were analyzed in the [Preprocessing - Segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) and the [Event-related averaging and MEG planar gradient](/tutorial/sensor/eventrelatedaveraging) tutorials. The corresponding anatomical MRI data is available from the [download server](https://download.fieldtriptoolbox.org/tutorial/Subject01.zip).
+This tutorial describes how to construct a volume conduction model of the head (head model) based on an individual subject's MRI. We will use the anatomical images that belong to the same subject whose data were analyzed in the [preprocessing - segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) and the [event-related averaging and MEG planar gradient](/tutorial/sensor/eventrelatedaveraging) tutorials. The corresponding anatomical MRI data is available from the [download server](https://download.fieldtriptoolbox.org/tutorial/Subject01.zip).
 
 The volume conduction model of the head that will be constructed here is specific to the computation and source reconstruction of MEG data. Different strategies can be used for the construction of head models. The processing pipeline of the tutorial is an example which we think is the most appropriate for the tutorial-dataset.
 
-This tutorial will `not` show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+This tutorial will `not` show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 {% include markup/green %}
 The volume conduction model created here is MEG specific and cannot be used for EEG source reconstruction. If you are interested in EEG source reconstruction methods, you can go to the corresponding [EEG tutorial](/tutorial/source/headmodel_eeg).
@@ -194,7 +194,7 @@ In exercise 1, you created a head model with method 'singlesphere'. How is its g
 
 In this tutorial, it was explained how to build a volume conduction model of the head using a single subject anatomical mri and the single shell method developed by Nolte (2003). In the exercises, we compared the head model to a single sphere that was fitted on the inside brain surface.
 
-You can read more about specific source reconstruction methods in the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+You can read more about specific source reconstruction methods in the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 ### See also these frequently asked questions
 

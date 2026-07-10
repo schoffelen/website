@@ -12,7 +12,7 @@ redirect_from:
 
 This tutorial describes how to define epochs-of-interest (trials) from your recorded EEG-MEG-data, and how to apply the different preprocessing steps. This tutorial also shows you how to average your data and compare conditions (standard versus deviant tones).
 
-This tutorial does the preprocessing and segmenting in a single step. If you are interested in how to do preprocessing on your continuous data prior to segmenting it into trials, you can check the [Preprocessing - Reading continuous data](/tutorial/preproc/continuous) tutorial.
+This tutorial does the preprocessing and segmenting in a single step. If you are interested in how to do preprocessing on your continuous data prior to segmenting it into trials, you can check the [preprocessing - reading continuous data](/tutorial/preproc/continuous) tutorial.
 
 {% include markup/skyblue %}
 This tutorial contains the hands-on material of the [NatMEG workshop](/workshop/natmeg2014) and is complemented by this lecture.
@@ -201,7 +201,7 @@ The most important fields are data_MEG.trial containing the individual trials an
 
 _Figure: A plot of a single trial of one channel_
 
-This demonstrate how to extract trials from a dataset based on trigger information. Note that some of these trials will be contaminated with various artifact such as eye blinks or MEG sensor jumps. The way we deal with artifacts is described in general in [another tutorial](/tutorial/preproc/artifacts) and visual artifact rejection is described in the [Visual artifact rejection](/tutorial/preproc/visual_artifact_rejection) tutorial. For efficiency in this hands-on tutorial, we will use a semi-automatic way of rejecting trials and channels containing artifacts using a summary view of all trials and channels transformed into z-scores. This allows you to get a quick overview of your data and enables you to easily detect and remove outliers.
+This demonstrate how to extract trials from a dataset based on trigger information. Note that some of these trials will be contaminated with various artifact such as eye blinks or MEG sensor jumps. The way we deal with artifacts is described in general in [another tutorial](/tutorial/preproc/artifacts) and visual artifact rejection is described in the [visual artifact rejection](/tutorial/preproc/visual_artifact_rejection) tutorial. For efficiency in this hands-on tutorial, we will use a semi-automatic way of rejecting trials and channels containing artifacts using a summary view of all trials and channels transformed into z-scores. This allows you to get a quick overview of your data and enables you to easily detect and remove outliers.
 
     % separately for magnetometers
     cfg               = [];
@@ -285,7 +285,7 @@ The most important field is ERF_standard.avg, containing the average over all tr
 
 #### Plotting the results using the magnetometers
 
-Using the plot functions **[ft_multiplotER](/reference/ft_multiplotER)**, **[ft_singleplotER](/reference/ft_singleplotER)** and **[ft_topoplotER](/reference/ft_topoplotER)** you can make plots of the average. You can find information about plotting also in the [Plotting data at the channel and source level](/tutorial/plotting) tutorial.
+Using the plot functions **[ft_multiplotER](/reference/ft_multiplotER)**, **[ft_singleplotER](/reference/ft_singleplotER)** and **[ft_topoplotER](/reference/ft_topoplotER)** you can make plots of the average. You can find information about plotting also in the [plotting data at the channel and source level](/tutorial/plotting) tutorial.
 
 Use **[ft_multiplotER](/reference/ft_multiplotER)** to plot all sensors in one figure:
 
@@ -587,7 +587,7 @@ The most important field is _ERP_oddball.avg_, containing the average over all t
 
 #### Plotting the results of EEG
 
-Using the plot functions **[ft_multiplotER](/reference/ft_multiplotER)**, **[ft_singleplotER](/reference/ft_singleplotER)** and **[ft_topoplotER](/reference/ft_topoplotER)** you can make plots of the average. You can find information about plotting also in the [Plotting data at the channel and source level](/tutorial/plotting) tutorial.
+Using the plot functions **[ft_multiplotER](/reference/ft_multiplotER)**, **[ft_singleplotER](/reference/ft_singleplotER)** and **[ft_topoplotER](/reference/ft_topoplotER)** you can make plots of the average. You can find information about plotting also in the [plotting data at the channel and source level](/tutorial/plotting) tutorial.
 
 Use **[ft_multiplotER](/reference/ft_multiplotER)** to plot all sensors in one figure:
 
@@ -791,4 +791,4 @@ We now have the same amount of trials for each type of sensor.
 
 In this tutorial we learned how to look at raw MEG and EEG data, define trials based on trigger codes, preprocess the data - including filtering and rereferencing, and average the data to ERPs and ERFs. We then learned how to display the results in terms of their time courses as well as their corresponding topographies. We also got a good sense of the differences in topographies of fields and potentials when we compared MEG magnetometers with gradiometers and EEG. Finally, we also showed you how you are able to combine EEG and MEG if you would like to do analysis on them simultaneously.
 
-If you are interested in a different analysis of your data that shows event-related changes in the oscillatory components of the signal, you can continue with the [combined EEG-MEG timefrequency tutorial](/tutorial/sensor/timefrequency) or the standard [time-frequency analysis](/tutorial/sensor/timefrequencyanalysis) tutorial.
+If you are interested in a different analysis of your data that shows event-related changes in the oscillatory components of the signal, you can continue with the [combined EEG/MEG time-frequency analysis](/tutorial/sensor/timefrequency) or the standard [time-frequency analysis](/tutorial/sensor/timefrequencyanalysis) tutorial.

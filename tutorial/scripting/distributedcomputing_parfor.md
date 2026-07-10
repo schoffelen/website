@@ -17,7 +17,7 @@ Goals of this tutorial:
 -   use the [MATLAB Parallel Computing toolbox](http://www.mathworks.com/products/parallel-computing/) to do parallel computations and analyze multiple subjects at once
 -   set up the code to deal with problematic subjects, such that successfully completed analyses do not have to be repeated if one fails
 
-This tutorial is focused on parallel computing, hence the code samples are set up to bring this aspect to the front. To keep it simple, as a consequence most of the code samples do NOT follow the recommendations in [Creating a clean analysis pipeline](/tutorial/scripting) regarding separating subject details from the analysis code, writing wrapper analysis functions, or handling of the input and output data through files. The final example also does not completely follow the guidelines, but does show what functions to use when interacting with files and paths to files in a parallel computing setting.
+This tutorial is focused on parallel computing, hence the code samples are set up to bring this aspect to the front. To keep it simple, as a consequence most of the code samples do NOT follow the recommendations in [creating a clean analysis pipeline](/tutorial/scripting) regarding separating subject details from the analysis code, writing wrapper analysis functions, or handling of the input and output data through files. The final example also does not completely follow the guidelines, but does show what functions to use when interacting with files and paths to files in a parallel computing setting.
 
 ## Background on parallel computing
 
@@ -149,7 +149,7 @@ To do the same analysis on multiple subjects, in short:
 
 Compared to the single-subject code above, the below code shows that for multi-subject analysis, the per-subject part has only minimal changes. To show where the change from single-subject to multi-subject happens, and how such code differs in its inputs, an actual ft_timelockgrandaverage call has been implemented. Grand average is on a combination of subjects, so that is an analysis that comes only after the per-subject analyses.
 
-Note that, as mentioned earlier, the data organization for this tutorial deviates from the recommendations in [Creating a clean analysis pipeline](/tutorial/scripting).
+Note that, as mentioned earlier, the data organization for this tutorial deviates from the recommendations in the [creating a clean analysis pipeline](/tutorial/scripting) tutorial.
 
 ### Exercise
 

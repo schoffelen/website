@@ -13,9 +13,9 @@ This tutorial demonstrates how to construct a Finite Element Method (FEM) volume
 
 In reality we did _not_ record EEG data for this subject, nor do we have recorded electrode positions. To demonstrate the EEG volume conduction model, we will use [template](/template/electrode) electrodes. The template electrodes are not aligned with the individual MRI and head model, hence towards the end we will demonstrate how to align the template electrodes with the model.
 
-This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
-We have another tutorial that demonstrates how to make a [Boundary Element Method (BEM) headmodel for EEG](/tutorial/source/headmodel_eeg_bem). Furthermore, if you are interested in MEG head models, we recommend that you go to the corresponding [MEG tutorial](/tutorial/source/headmodel_meg).
+We have another tutorial that demonstrates how to make a [boundary element method (BEM) headmodel for EEG](/tutorial/source/headmodel_eeg_bem). Furthermore, if you are interested in MEG head models, we recommend that you go to the corresponding [meg tutorial](/tutorial/source/headmodel_meg).
 
 {% include markup/yellow %}
 The FEM method described here is based on the SimBio software, which is described in detail [here](https://www.mrt.uni-jena.de/simbio/index.php/Main_Page#Welcome). The integration with FieldTrip is described in the paper below. Please cite this paper if you use the FieldTrip-SimBio pipeline in your research.
@@ -374,7 +374,7 @@ The construction of the sourcemodel above takes quite some time as many dipoles 
 
 This tutorial explained how to build a volume conduction model of the head using a single subject anatomical MRI and a finite element method (FEM) using the FieldTrip-SIMBIO pipeline.
 
-You can read more about specific source reconstruction methods in the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+You can read more about specific source reconstruction methods in the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 ### See also these frequently asked questions
 

@@ -13,7 +13,7 @@ This tutorial demonstrates how to analyze a functional near-infrared spectroscop
 
 By the end of this tutorial, you will be able to read in fNIRS data, segment it and apply different pre-processing steps. This tutorial thus also serves as a kind of general introduction into the basic fundamentals of FieldTrip. You will also learn how to create basic visualizations of the data such as plotting single traces or topographic mapping. Finally, in this tutorial you will compute time-locked averages from the segmented data.
 
-This tutorial does not show how to deal with bad channels as it only operates on single channel data. You can find more information about [how to remove bad channels](/tutorial/nirs_multichannel#remove_bad_channels) and generally how to analyise multiple channels in the [Preprocessing and averaging of multi-channel NIRS data](/tutorial/nirs/nirs_multichannel) tutorial.
+This tutorial does not show how to deal with bad channels as it only operates on single channel data. You can find more information about [how to remove bad channels](/tutorial/nirs_multichannel#remove_bad_channels) and generally how to analyise multiple channels in the [preprocessing and averaging of multi-channel NIRS data](/tutorial/nirs/nirs_multichannel) tutorial.
 
 ## Background
 
@@ -67,7 +67,7 @@ It might also be helpful to check out the code to obtain an understanding of wha
     edit ft_preprocessing
 
 {% include markup/skyblue %}
-If this is your first time using FieldTrip you might also want to have a look at the [introduction to the toolbox and MATLAB tutorial](/tutorial/intro/introduction).
+If this is your first time using FieldTrip you might also want to have a look at the [introduction](/tutorial/intro/introduction) tutorial.
 {% include markup/end %}
 
 ### Read & trim data
@@ -298,7 +298,7 @@ _Figure 5: Averaged O2Hb and HHb traces. This figure closely resembles the text-
 
 ## Summary and suggested further reading
 
-We explained the preprocessing steps for a single channel in an fNIRS dataset using FieldTrip. If you would like to read further on how to preprocess an fNIRS dataset with multiple channels, you can continue with the [fNIRS multi-channel tutorial](/tutorial/nirs/nirs_multichannel). When you have more questions about the topic of any tutorial, do not forget to check the [frequently asked questions](/faq) and the [example scripts](/example).
+We explained the preprocessing steps for a single channel in an fNIRS dataset using FieldTrip. If you would like to read further on how to preprocess an fNIRS dataset with multiple channels, you can continue with the [NIRS multi-channel](/tutorial/nirs/nirs_multichannel) tutorial. When you have more questions about the topic of any tutorial, do not forget to check the [frequently asked questions](/faq) and the [example scripts](/example).
 
 See also the other documentation that relates to fNIRS:
 

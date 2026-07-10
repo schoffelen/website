@@ -44,7 +44,7 @@ _Figure: Automatic artifact rejection processes the data in several steps to all
 
 ### I. Reading the data (with padding) from disk
 
-Physiological data is often very large. For this reason it is sometimes efficient to read and review only the data you need, instead of reading all the data. This is the reason that in FieldTrip we commonly read the (marker/trigger) events first to determine data segments (trials) of interest, which are then read into memory in a separate step. For how to define trials see [Getting started with reading raw EEG or MEG data](/example/preproc/raw_meeg) and the [Preprocessing - Segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) tutorial. However, note that it is also possible and just as valid to do artifact detection on [continuous data](/tutorial/preproc/continuous).
+Physiological data is often very large. For this reason it is sometimes efficient to read and review only the data you need, instead of reading all the data. This is the reason that in FieldTrip we commonly read the (marker/trigger) events first to determine data segments (trials) of interest, which are then read into memory in a separate step. For how to define trials see [Getting started with reading raw EEG or MEG data](/example/preproc/raw_meeg) and the [preprocessing - segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) tutorial. However, note that it is also possible and just as valid to do artifact detection on [continuous data](/tutorial/preproc/continuous).
 
 (Automatic) artifact rejected is consistent in this regard: we use our artifact detection and rejection to exclude intervals/trials from our trial definition `trl` so that in a later step we do not have to read in artifactual data.
 
@@ -292,7 +292,7 @@ See also this [FAQ](/faq/preproc/artifact/artifact_padding) on the different typ
 
 ## Suggested further reading
 
-For an introduction to how you can deal with artifacts in FieldTrip in general, you should have a look at the [Introduction: dealing with artifacts](/tutorial/preproc/artifacts) tutorial. As an alternative to automatic artifact detection, you can manually inspect the trial- and channel-data, see the [visual artifact rejection](/tutorial/preproc/visual_artifact_rejection) tutorial. Furthermore, you use ICA to remove artifacts from your data, this is explained in the [cleaning artifacts using ICA](/tutorial/preproc/ica_artifact_cleaning) tutorial.
+For an introduction to how you can deal with artifacts in FieldTrip in general, you should have a look at the [introduction on dealing with artifacts](/tutorial/preproc/artifacts) tutorial. As an alternative to automatic artifact detection, you can manually inspect the trial- and channel-data, see the [visual artifact rejection](/tutorial/preproc/visual_artifact_rejection) tutorial. Furthermore, you use ICA to remove artifacts from your data, this is explained in the [cleaning artifacts using ICA](/tutorial/preproc/ica_artifact_cleaning) tutorial.
 
 More information on dealing with artifacts can also be found in some example scripts and frequently asked questions. Furthermore, this topic is often discussed on the [email discussion list](/discussion_list) which can be searched [like this](https://www.google.com/search?q=site%3Amailman.science.ru.nl%2Fpipermail%2Ffieldtrip&q=artifacts).
 

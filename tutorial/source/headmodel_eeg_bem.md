@@ -13,9 +13,9 @@ This tutorial demonstrates how to construct a Boundary Element Method (BEM) volu
 
 In reality we did _not_ record EEG data for this subject, nor do we have recorded electrode positions. To demonstrate the EEG volume conduction model, we will use [template](/template/electrode) electrodes. The template electrodes are not aligned with the individual MRI and head model, hence towards the end we will demonstrate how to align the template electrodes with the model.
 
-This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
-We have another tutorial that demonstrates how to make a [Finite Element Method (FEM) headmodel for EEG](/tutorial/source/headmodel_eeg_fem). Furthermore, if you are interested in MEG head models, we recommend that you go to the corresponding [MEG tutorial](/tutorial/source/headmodel_meg).
+We have another tutorial that demonstrates how to make a [finite element method (FEM) headmodel for EEG](/tutorial/source/headmodel_eeg_fem). Furthermore, if you are interested in MEG head models, we recommend that you go to the corresponding [meg tutorial](/tutorial/source/headmodel_meg).
 
 ## Background
 
@@ -479,7 +479,7 @@ In exercise 2, you created a head model with method 'concentricspheres'. How is 
 
 This tutorial explained how to build a volume conduction model of the head using a single subject anatomical MRI and the boundary element method (BEM) developed by Oostendorp and van Oosterom (1989). In the exercises, we also compared the BEM model to a concentric spheres model that was fitted on the scalp, skull and brain surfaces.
 
-You can read more about specific source reconstruction methods in the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+You can read more about specific source reconstruction methods in the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 ### See also these frequently asked questions
 

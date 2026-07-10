@@ -93,7 +93,7 @@ Take your time to browse and evaluate the topographies and the corresponding tim
     cfg.component = [3 6 7 16];
     dataica = ft_rejectcomponent(cfg, comp);
 
-The ica corrected data can be downloaded [here](https://download.fieldtriptoolbox.org/tutorial/connectivity_aef/dataica.mat).
+The ICA corrected data can be downloaded [here](https://download.fieldtriptoolbox.org/tutorial/connectivity_aef/dataica.mat).
 
 ### Computing and plotting of the auditory evoked fields
 

@@ -11,7 +11,7 @@ redirect_from:
 
 A convenient use of the **[ft_preprocessing](/reference/ft_preprocessing)** is to read the continuous data fully in memory. This is feasible if your data set is relatively small and if your computer has enough memory to hold all data in memory at once. The advantage of preprocessing data in a continuous format is that it can help to prevent filter artifacts, it can improve the quality of ICA decompositions, and  gives a better overview of all data features, including artifacts that may be more difficult to recognize in segmented data.
 
-If your experiment consists of a sequence of trials, you may also want to start by segmenting the data and only read the trials of interest. This is described in the [Preprocessing - Segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) tutorial.
+If your experiment consists of a sequence of trials, you may also want to start by segmenting the data and only read the trials of interest. This is described in the [preprocessing - segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing) tutorial.
 
 ## Background
 
@@ -126,6 +126,12 @@ If you want to force epoched data to be interpreted as continuous data, you can 
     ylabel(data_meg.label{chansel})
 
 If you zoom in and look in detail at the SCLK01 channel, you can see that there are small jumps every 3 seconds. These are due to the data being discontinuous on disk, i.e. only the 3 second segments around each stimulus are stored on disk and the data in-between the trials is not stored. Consequently the MEG channels will also have small jumps every 3 seconds and hence this particular dataset should **not be interpreted** as a continuous recording. Many other CTF recordings are stored on disk with data segments of 10 seconds each; these can be interpreted as continuous as there are no gaps between the long segments.
+
+{% include markup/warning %}
+When doing continuous MEG data acquisition (which is the default at the Donders and many other labs), the CTF acquisition software by default writes data to disk in 10-second segments. These segments are continuous, so between subsequent segments there is no time gap and there are no missing samples or jumps in the signal. Regretfully, FieldTrip is not able to distinguish these pseudo-continuous files from properly epoched files which **do** have a gap and a jump in the signals between the trials/segments (as in Subject01.ds above).
+
+If your CTF data contains 10-second epochs, it is very likely that it is a pseudocontinuous recording and you shuold use the `cfg.continuous = 'yes'`  option. 
+{% include markup/end %}
 
 ## Preprocessing, filtering and rereferencing
 
@@ -276,7 +282,7 @@ The following example shows how to first read the data as a single continuous se
 
 ## Suggested further reading
 
-After having finished this tutorial on preprocessing, you can continue with the tutorial on [Preprocessing of EEG data and compute ERPs](/tutorial/sensor/preprocessing_erp), with the [event-related averaging](/tutorial/sensor/eventrelatedaveraging) or with the [time-frequency analysis](/tutorial/sensor/timefrequencyanalysis) tutorial.
+After having finished this tutorial on preprocessing, you can continue with the tutorial on [preprocessing of EEG data and compute ERPs](/tutorial/sensor/preprocessing_erp), with the [event-related averaging](/tutorial/sensor/eventrelatedaveraging) or with the [time-frequency analysis](/tutorial/sensor/timefrequencyanalysis) tutorial.
 
 ### See also these frequently asked questions
 

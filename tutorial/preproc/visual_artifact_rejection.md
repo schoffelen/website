@@ -218,7 +218,7 @@ With the trials split per condition, this corresponds to the following trials:
 
 ## Suggested further reading
 
-For an introduction to how you can deal with artifacts in FieldTrip in general, you should have a look at the [Introduction: dealing with artifacts](/tutorial/preproc/artifacts) tutorial. As an alternative to visual artifact detection, you can do it automatically, see the [automatic artifact rejection](/tutorial/preproc/automatic_artifact_rejection) tutorial. Furthermore, you use ICA to remove artifacts from your data, this is explained in the [cleaning artifacts using ICA](/tutorial/preproc/ica_artifact_cleaning) tutorial.
+For an introduction to how you can deal with artifacts in FieldTrip in general, you should have a look at the [introduction on dealing with artifacts](/tutorial/preproc/artifacts) tutorial. As an alternative to visual artifact detection, you can do it automatically, see the [automatic artifact rejection](/tutorial/preproc/automatic_artifact_rejection) tutorial. Furthermore, you use ICA to remove artifacts from your data, this is explained in the [cleaning artifacts using ICA](/tutorial/preproc/ica_artifact_cleaning) tutorial.
 
 More information on dealing with artifacts can also be found in some example scripts and frequently asked questions. Furthermore, this topic is often discussed on the [email discussion list](/discussion_list) which can be searched [like this](https://www.google.com/search?q=site%3Amailman.science.ru.nl%2Fpipermail%2Ffieldtrip&q=artifacts).
 

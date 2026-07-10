@@ -11,7 +11,7 @@ redirect_from:
 
 In this tutorial you can find information about how to construct a source model that can be used for source reconstruction of EEG or MEG data. The source model describes a set of positions (and possibly orientations) of equivalent current dipoles that are taken into consideration when doing the source reconstruction. Note that not all source reconstruction methods require an explicit definition of a source model. Note also, that by and large source models should have the same specifications, irrespective of whether you are reconstructing EEG or MEG data. In this tutorial we will demonstrate how to use subject-specific anatomical data to create different types of source models. Which source model is most appropriate depends on the source reconstruction algorithm used, the additional analysis steps you have in mind, and on your own preferences. The anatomical MRI is available from the [download server](https://download.fieldtriptoolbox.org/tutorial/Subject01.zip).
 
-This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+This tutorial will **not** show how to perform the source reconstruction itself. If you are interested in source reconstruction methods, you can go to the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and to the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 ## Background
 
@@ -389,7 +389,7 @@ If you performed source reconstruction on the cortical surface, and you used the
 
 This tutorial explained how to build a source model that can be used for source reconstruction of EEG or MEG measurements.
 
-You can read more about specific source reconstruction methods in the [Localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [Source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
+You can read more about specific source reconstruction methods in the [localizing oscillatory sources using beamformer techniques](/tutorial/source/beamformer) and in the [source reconstruction of event-related fields using minimum-norm estimate](/tutorial/source/minimumnormestimate) tutorials.
 
 ## See also
 

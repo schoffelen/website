@@ -11,7 +11,7 @@ redirect_from:
 
 This tutorial describes how to define epochs-of-interest (trials) from MEG data, and how to apply the different preprocessing steps. This tutorial does not show yet how to analyze (e.g., average) your data.
 
-If you are interested in how to do preprocessing on your data prior to segmenting it into trials, you can check the [Preprocessing - Reading continuous data](/tutorial/preproc/continuous) tutorial, which also introduces some preprocessing options that are specific for EEG. If you want to learn how to segment continuous data into trials, check the [Preprocessing of EEG data and computing ERPs](/tutorial/sensor/preprocessing_erp) tutorial.
+If you are interested in how to do preprocessing on your data prior to segmenting it into trials, you can check the [preprocessing - reading continuous data](/tutorial/preproc/continuous) tutorial, which also introduces some preprocessing options that are specific for EEG. If you want to learn how to segment continuous data into trials, check the tutorial on [preprocessing of EEG data and computing ERPs](/tutorial/sensor/preprocessing_erp).
 
 ## Background
 
@@ -93,7 +93,7 @@ Save the preprocessed data to disk
 
     save PreprocData dataFIC dataIC dataFC -append
 
-These functions demonstrate how to extract trials from a dataset based on trigger information. Note that some of these trials will be contaminated with various artifact such as eye blinks or MEG sensor jumps. Artifact rejection is described in [Preprocessing - Visual artifact rejection](/tutorial/preproc/visual_artifact_rejection)
+These functions demonstrate how to extract trials from a dataset based on trigger information. Note that some of these trials will be contaminated with various artifact such as eye blinks or MEG sensor jumps. Artifact rejection is described in [preprocessing - visual artifact rejection](/tutorial/preproc/visual_artifact_rejection)
 
 ## Use your own function for trial selection
 

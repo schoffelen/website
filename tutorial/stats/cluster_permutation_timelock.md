@@ -11,9 +11,9 @@ redirect_from:
 
 The objective of this tutorial is to give an introduction to the statistical analysis of event-related EEG and MEG data (denoted as M/EEG data in the following) by means of cluster-based permutation tests. The tutorial starts with a long background section that sketches the background of permutation tests. Subsequently it is shown how to use FieldTrip to perform cluster-based permutation tests on actual axial and planar event-related fields in a between-trials (using single-subject data) and in a within-subjects design (using data from multiple subjects).
 
-In this tutorial we will continue working on the [dataset](/tutorial/meg_language) of a single subject described in previous tutorials. Below we will repeat some code to select the trials and preprocess the data as described in the earlier tutorials on [Preprocessing - Segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing), [artifact rejection](/tutorial/preproc/artifacts), and [Event-related averaging and MEG planar gradient](/tutorial/sensor/eventrelatedaveraging). We assume that the preprocessing and averaging steps of the analysis are already clear for the reader.
+In this tutorial we will continue working on the [dataset](/tutorial/meg_language) of a single subject described in previous tutorials. Below we will repeat some code to select the trials and preprocess the data as described in the earlier tutorials on [preprocessing - segmenting and reading trial-based EEG and MEG data](/tutorial/preproc/preprocessing), [artifact rejection](/tutorial/preproc/artifacts), and [event-related averaging and MEG planar gradient](/tutorial/sensor/eventrelatedaveraging). We assume that the preprocessing and averaging steps of the analysis are already clear for the reader.
 
-This tutorial is not covering statistical test on time-frequency representations. If you are interested in that, you can read the [Cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial. If you are interested how parametric statistical tests can be used with FieldTrip, you can read the [Parametric and non-parametric statistics on event-related fields](/tutorial/stats/eventrelatedstatistics) tutorial.
+This tutorial is not covering statistical test on time-frequency representations. If you are interested in that, you can read the [cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial. If you are interested how parametric statistical tests can be used with FieldTrip, you can read the [parametric and non-parametric statistics on event-related fields](/tutorial/stats/eventrelatedstatistics) tutorial.
 
 {% include markup/skyblue %}
 This tutorial contains hands-on material that we use for the [MEG/EEG toolkit course](/workshop/toolkit2015) and it is complemented by this lecture.
@@ -538,7 +538,7 @@ _Figure 6: Raw effect (FIC-FC) on the grand average planar gradient ERFs with th
 
 In this tutorial, it was shown how to do non-parametric statistics on axial and planar ERFs in a between-trials and in within-subjects design. It was also shown how to plot the results.
 
-If you are interested in parametric tests in FieldTrip, you can read the [Parametric and non-parametric statistics on event-related fields](/tutorial/stats/eventrelatedstatistics) tutorial. If you are interested in how to do the same statistics on time-frequency representations, you can read the [Cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial.
+If you are interested in parametric tests in FieldTrip, you can read the [parametric and non-parametric statistics on event-related fields](/tutorial/stats/eventrelatedstatistics) tutorial. If you are interested in how to do the same statistics on time-frequency representations, you can read the [cluster-based permutation tests on time-frequency data](/tutorial/stats/cluster_permutation_freq) tutorial.
 
 If you would like to read more about statistical analysis, you can look at the following FAQs:
 

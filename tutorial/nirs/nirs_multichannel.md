@@ -11,7 +11,7 @@ redirect_from:
 
 In this tutorial, you will process a functional near-infrared spectroscopy (fNIRS) data set consisting of multiple channels. We will read in the raw data, have a look at the setup and the data, preprocess the data incorporating specific procedures for multichannel setups, and explore different methods of visualizing the temporal and spatial aspects of the response.
 
-We suggest to first read the [Getting started with Artinis](/getting_started/nirs/artinis) page to get the details on the recording system. Furthermore, we suggest you follow the [NIRS single channel](/tutorial/nirs/nirs_singlechannel) tutorial to learn how to pre-process a simpler fNIRS data set with only a a single channel.
+We suggest to first read the [Getting started with Artinis](/getting_started/nirs/artinis) page to get the details on the recording system. Furthermore, we suggest you follow the [NIRS single-channel](/tutorial/nirs/nirs_singlechannel) tutorial to learn how to pre-process a simpler fNIRS data set with only a a single channel.
 
 Note that other NIRS systems will have a different file format than the ones used here and that this tutorial might not directly translate. The global structure however applies to other NIRS systems as well.
 
