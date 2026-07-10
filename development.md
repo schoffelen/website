@@ -12,6 +12,7 @@ The source code in the FieldTrip toolbox is split over multiple directories refl
 We use a combination of tools (GitHub, BlueSky, website, mailman) that are loosely linked to each other; for example, every news item on the website is automatically tweeted. An overview is presented on the [integration](/development/integration) page.
 
 - [Contribute](/development/contribute)
+- [Extensions](/development/extensions)
 - [Guidelines](/development/guideline)
 - [Software architecture](/development/architecture)
 - [Data structures](/development/datastructure)

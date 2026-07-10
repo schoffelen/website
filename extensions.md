@@ -12,7 +12,7 @@ The FieldTrip toolbox is part of a larger, collaborative ecosystem. We encourage
 To have your own extension listed here, please contact the FieldTrip maintainers
 by email or send a [pull request](https://github.com/fieldtrip/website/tree/master/_data/extensions).
 If you are preparing a new extension, please also see the
-[extension author checklist](/development/extension).
+[extension author checklist](/development/extensions).
 
 {% assign extensions = site.data.extensions | sort %}
 {% for item in extensions %}

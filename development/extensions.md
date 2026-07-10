@@ -3,8 +3,8 @@ title: Preparing a FieldTrip extension
 tags: [development]
 ---
 
-FieldTrip extensions are externally maintained projects that build on, wrap, or
-interact with FieldTrip without necessarily becoming part of the main FieldTrip
+FieldTrip [extensions](/extensions) are externally maintained projects that build on, 
+wrap, or interact with FieldTrip without necessarily becoming part of the main FieldTrip
 code repository. They can be useful for complete analysis methods, graphical
 interfaces, research group workflows, or toolboxes with their own release cycle.
 
@@ -55,7 +55,7 @@ extension modifies FieldTrip data structures or only reads them.
 
 ## Request a listing on the website
 
-Extension listings live in the website repository under `_data/extensions`.
+Extension listings live in the [website repository](https://github.com/fieldtrip/website/tree/master/_data/extensions) under `_data/extensions`.
 Each listing is a small `.yml` file with fields such as:
 
 ```yaml
@@ -72,12 +72,11 @@ Only `name`, `authors`, `description`, and `url` are essential. Citation fields
 such as `doi`, `pmid`, and `pmcid` can be added when they are available.
 
 You can request a listing by opening a pull request against the
-[FieldTrip website repository](https://github.com/fieldtrip/website). In the
-pull request description, please include:
+[website repository](https://github.com/fieldtrip/website/tree/master/_data/extensions). 
+In the pull request description, please include:
 
 - a link to the extension repository;
-- the main FieldTrip function or data structure that the extension interacts
-  with, if there is one;
+- the main FieldTrip function or data structure that the extension interacts with, if there is one;
 - who maintains the extension;
 - whether the extension has a paper, preprint, tutorial, or example;
 - any known limitations that FieldTrip users should understand before using it.

@@ -23,7 +23,7 @@ If your contribution is considerable, for example a completely new algorithm, th
 
 If the contribution is a self-contained method, graphical interface, pipeline,
 or toolbox style project that will be maintained by its original authors, it may
-be more appropriate to publish it as a separate [FieldTrip extension](/development/extension)
+be more appropriate to publish it as a separate [FieldTrip extension](/development/extensions)
 and request a listing on the [extensions page](/extensions).
 
 {% include markup/skyblue %}
