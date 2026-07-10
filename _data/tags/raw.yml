@@ -36,7 +36,7 @@
 - link: /tutorial/preproc/continuous
   title: Preprocessing - Reading continuous EEG and MEG data
 - link: /tutorial/preproc/ica_artifact_cleaning
-  title: Cleaning artifacts using ICA
+  title: Cleaning artifacts in MEG data using ICA
 - link: /tutorial/preproc/preprocessing
   title: Preprocessing - Segmenting and reading trial-based EEG and MEG data
 - link: /tutorial/preproc/visual_artifact_rejection

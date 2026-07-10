@@ -15,6 +15,8 @@
   title: Getting started with QuSpin OPM data
 - link: /template/layout
   title: Template 2-D layouts for plotting
+- link: /tutorial/preproc/denoising_opm
+  title: Denoising OPM data
 - link: /tutorial/sensor/opm_helmet_design
   title: Designing a custom 3D printed OPM helmet
 - link: /tutorial/sensor/preprocessing_opm

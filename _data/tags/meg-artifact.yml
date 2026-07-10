@@ -5,4 +5,4 @@
 - link: /tutorial/preproc/automatic_artifact_rejection
   title: Automatic artifact rejection
 - link: /tutorial/preproc/ica_artifact_cleaning
-  title: Cleaning artifacts using ICA
+  title: Cleaning artifacts in MEG data using ICA
