@@ -337,6 +337,9 @@
     - title: Spectral estimation of of EEG/MEG time series data
       link: /development/module/specest/
       nav_order: 0
+  - title: Preparing a FieldTrip extension
+    link: /development/extensions/
+    nav_order: 0
   - title: Project overview
     link: /development/project/
     nav_order: 0

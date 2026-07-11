@@ -8,6 +8,8 @@
   title: Accessing the FieldTrip source code through CVS
 - link: /development/datastructure
   title: Data structures
+- link: /development/extensions
+  title: Preparing a FieldTrip extension
 - link: /development/git
   title: Accessing the FieldTrip source code through Git
 - link: /development/guideline/code
