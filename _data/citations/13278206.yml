@@ -1,0 +1,39 @@
+articleids:
+- idtype: pmid
+  value: '42326803'
+- idtype: pmcid
+  value: PMC13278206
+- idtype: doi
+  value: 10.64898/2026.06.08.26355206
+- idtype: pii
+  value: 2026.06.08.26355206
+authors:
+- authtype: Author
+  name: Deco G
+- authtype: Author
+  name: Perl YS
+- authtype: Author
+  name: Vohryzek J
+- authtype: Author
+  name: Garcia-Guzman E
+- authtype: Author
+  name: Pizzagalli DA
+- authtype: Author
+  name: Laukkonen R
+- authtype: Author
+  name: Chandaria S
+- authtype: Author
+  name: Kringelbach ML
+epubdate: 2026 Jun 10
+fulljournalname: 'medRxiv : the preprint server for health sciences'
+issue: ''
+pages: ''
+pmclivedate: 2026/06/19
+printpubdate: ''
+pubdate: 2026 Jun 10
+sortdate: 2026/06/10 00:00
+source: medRxiv
+title: 'A canary in the mind: A single baseline brain scan predicts adolescent depression
+  and anxiety one year later.'
+uid: '13278206'
+volume: ''

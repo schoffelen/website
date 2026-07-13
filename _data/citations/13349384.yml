@@ -1,0 +1,29 @@
+articleids:
+- idtype: pmid
+  value: '42423458'
+- idtype: doi
+  value: 10.7554/eLife.111114
+- idtype: pii
+  value: '111114'
+- idtype: pmcid
+  value: PMC13349384
+authors:
+- authtype: Author
+  name: Strzelczyk D
+- authtype: Author
+  name: Vetsch A
+- authtype: Author
+  name: Langer N
+epubdate: 2026 Jul 9
+fulljournalname: eLife
+issue: ''
+pages: ''
+pmclivedate: 2026/07/10
+printpubdate: ''
+pubdate: 2026 Jul 9
+sortdate: 2026/07/09 00:00
+source: Elife
+title: Theta beta ratio in attention deficit hyperactivity disorder using a multiverse
+  analysis.
+uid: '13349384'
+volume: '15'

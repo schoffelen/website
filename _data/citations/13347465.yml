@@ -1,0 +1,43 @@
+articleids:
+- idtype: pmid
+  value: '40383539'
+- idtype: doi
+  value: 10.1177/1877718X251320941
+- idtype: pmcid
+  value: PMC13347465
+authors:
+- authtype: Author
+  name: Dutke J
+- authtype: Author
+  name: Gehlenborg J
+- authtype: Author
+  name: Heise M
+- authtype: Author
+  name: Hamel W
+- authtype: Author
+  name: Gerloff C
+- authtype: Author
+  name: Thomalla G
+- authtype: Author
+  name: Magnus T
+- authtype: Author
+  name: Engel AK
+- authtype: Author
+  name: Moll CK
+- authtype: Author
+  name: Gulberti A
+- authtype: Author
+  name: Pötter-Nerger M
+epubdate: 2025 May 18
+fulljournalname: Journal of Parkinson's disease
+issue: '4'
+pages: 843-857
+pmclivedate: 2026/07/11
+printpubdate: 2025 Jun
+pubdate: 2025 Jun
+sortdate: 2025/06/01 00:00
+source: J Parkinsons Dis
+title: Effects of theta burst stimulation on the Parkinsonian gait disorder and cortical
+  gait-network activity.
+uid: '13347465'
+volume: '15'

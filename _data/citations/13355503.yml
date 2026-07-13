@@ -1,0 +1,39 @@
+articleids:
+- idtype: pmid
+  value: '42437014'
+- idtype: pmcid
+  value: PMC13355503
+- idtype: doi
+  value: 10.1016/j.ibneur.2026.06.021
+- idtype: pii
+  value: S2667-2421(26)00101-6
+authors:
+- authtype: Author
+  name: Nguyen VT
+- authtype: Author
+  name: Quach THT
+- authtype: Author
+  name: Do H
+- authtype: Author
+  name: Duong KT
+- authtype: Author
+  name: Bui KN
+- authtype: Author
+  name: Ha H
+- authtype: Author
+  name: Pham AG
+- authtype: Author
+  name: Tran TC
+epubdate: 2026 Jul 2
+fulljournalname: IBRO neuroscience reports
+issue: ''
+pages: 228-237
+pmclivedate: 2026/07/12
+printpubdate: ''
+pubdate: 2026 Dec
+sortdate: 2026/07/02 00:00
+source: IBRO Neurosci Rep
+title: 'A qEEG-based prognostic model for cognitive impairment after ischemic stroke:
+  Development and internal validation.'
+uid: '13355503'
+volume: '21'

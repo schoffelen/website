@@ -1,0 +1,35 @@
+articleids:
+- idtype: pmid
+  value: '33018778'
+- idtype: doi
+  value: 10.1109/EMBC44109.2020.9175404
+- idtype: pmcid
+  value: PMC13347207
+- idtype: MID
+  value: NIHMS2188904
+authors:
+- authtype: Author
+  name: Krempp C
+- authtype: Author
+  name: Paulk AC
+- authtype: Author
+  name: Truccolo W
+- authtype: Author
+  name: Cash SS
+- authtype: Author
+  name: Zelmann R
+epubdate: ''
+fulljournalname: Annual International Conference of the IEEE Engineering in Medicine
+  and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International
+  Conference
+issue: ''
+pages: 3586-3589
+pmclivedate: 2026/07/10
+printpubdate: 2020 Jul
+pubdate: 2020 Jul
+sortdate: 2020/07/01 00:00
+source: Annu Int Conf IEEE Eng Med Biol Soc
+title: Effect of Closed-Loop Direct Electrical Stimulation during Sleep Spindles in
+  Humans.
+uid: '13347207'
+volume: '2020'

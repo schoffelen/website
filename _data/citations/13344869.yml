@@ -1,0 +1,33 @@
+articleids:
+- idtype: pmid
+  value: '42418244'
+- idtype: doi
+  value: 10.1111/nyas.70314
+- idtype: pmcid
+  value: PMC13344869
+authors:
+- authtype: Author
+  name: Rosso M
+- authtype: Author
+  name: Van Kerrebroeck B
+- authtype: Author
+  name: Keller PE
+- authtype: Author
+  name: Leman M
+- authtype: Author
+  name: Maes PJ
+- authtype: Author
+  name: Vuust P
+epubdate: ''
+fulljournalname: Annals of the New York Academy of Sciences
+issue: '1'
+pages: e70314
+pmclivedate: 2026/07/09
+printpubdate: 2026 Jul
+pubdate: 2026 Jul
+sortdate: 2026/07/01 00:00
+source: Ann N Y Acad Sci
+title: 'Neural Oscillatory Dynamics in Joint Action: Dissociable Roles of Entrainment
+  and Beta Modulation in Self-Other Integration.'
+uid: '13344869'
+volume: '1561'

@@ -1,0 +1,28 @@
+articleids:
+- idtype: pmid
+  value: '42141460'
+- idtype: doi
+  value: 10.1186/s12915-026-02630-7
+- idtype: pii
+  value: 10.1186/s12915-026-02630-7
+- idtype: pmcid
+  value: PMC13349037
+authors:
+- authtype: Author
+  name: Kong Q
+- authtype: Author
+  name: Wang T
+- authtype: Author
+  name: Jia J
+epubdate: 2026 May 15
+fulljournalname: BMC biology
+issue: '1'
+pages: ''
+pmclivedate: 2026/07/10
+printpubdate: ''
+pubdate: 2026 May 15
+sortdate: 2026/05/15 00:00
+source: BMC Biol
+title: Phasic modulation of attentional rhythmic sampling according to task demands.
+uid: '13349037'
+volume: '24'

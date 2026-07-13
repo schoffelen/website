@@ -1,0 +1,26 @@
+articleids:
+- idtype: pmid
+  value: '42378283'
+- idtype: doi
+  value: 10.1073/pnas.2530939123
+- idtype: pmcid
+  value: PMC13342952
+authors:
+- authtype: Author
+  name: Zhang Z
+- authtype: Author
+  name: He S
+- authtype: Author
+  name: Zhang J
+epubdate: 2026 Jun 30
+fulljournalname: Proceedings of the National Academy of Sciences of the United States
+  of America
+issue: '27'
+pages: e2530939123
+printpubdate: 2026 Jul 7
+pubdate: 2026 Jul 7
+sortdate: 2026/07/07 00:00
+source: Proc Natl Acad Sci U S A
+title: Sensitivity suppression during attention shifts.
+uid: '13342952'
+volume: '123'

@@ -1,0 +1,36 @@
+articleids:
+- idtype: pmid
+  value: '42082670'
+- idtype: doi
+  value: 10.1038/s42003-026-10071-9
+- idtype: pii
+  value: 10.1038/s42003-026-10071-9
+- idtype: pmcid
+  value: PMC13346530
+authors:
+- authtype: Author
+  name: Pagnotta MF
+- authtype: Author
+  name: Santo-Angles A
+- authtype: Author
+  name: Temudo A
+- authtype: Author
+  name: Barbosa J
+- authtype: Author
+  name: Compte A
+- authtype: Author
+  name: D'Esposito M
+- authtype: Author
+  name: Sreenivasan KK
+epubdate: 2026 May 4
+fulljournalname: Communications biology
+issue: '1'
+pages: ''
+pmclivedate: 2026/07/10
+printpubdate: ''
+pubdate: 2026 May 4
+sortdate: 2026/05/04 00:00
+source: Commun Biol
+title: Alpha phase coding supports feature binding during working memory maintenance.
+uid: '13346530'
+volume: '9'
