@@ -3,13 +3,15 @@ title: Advanced MEG/OPM toolkit at the Donders
 tags: [toolkit2026]
 ---
 
-From October 12-16 2026 we will host our annual MEG/OPM Tool-kit course in Nijmegen. This year will be the first time with a strong focus on OPMs. During the 5-day toolkit course we will teach you advanced MEG data analysis skills. Among others, pre-processing, source reconstruction and statistics will be covered. Furthermore, we will give special attention to new OPM-specific methods for denoising, coregistration and for custom helmet design.
+From October 12-16 2026 we will host our annual MEG Tool-kit course in Nijmegen. This year will be the first time with a strong focus on OPMs. During the 5-day toolkit course we will teach you advanced MEG data analysis skills. Among others, pre-processing, source reconstruction and statistics will be covered. Furthermore, we will give special attention to new OPM-specific methods for denoising, coregistration, analysis, and for custom helmet design.
 
 The toolkit consists of a number of lectures, followed by hands-on sessions in which you will be tutored through the analysis of SQUID-MEG and OPM-MEG data using the FieldTrip toolbox. Furthermore, we will schedule time for you to work on your own MEG data under supervision of experienced tutors.
 
 There is a limited number of places available for this toolkit. The selection of participants will be based on the background experience, the research interest and the expectations on what you will learn. We prefer the group to be reasonably homogeneous in level and expertise of the participants, as this improves the overall interaction. Note that we will **not cover EEG analysis** and that we will focus on MEG methods using both SQUID and OPM systems.  
 
-You will soon be able to pre-register [here](https://www.ru.nl/en/donders-institute/services/donders-toolkits). The deadline for pre-registration is TBD. We will inform you as to whether you obtained a place in this course not later than TBD.
+## Registration
+
+You can [pre-register here](https://www.ru.nl/en/donders-institute/agenda/donders-meg-opm-toolkit). The deadline for pre-registration is the 25th of Augus. In the week following registration closure we will inform you as to whether you obtained a place in this course. If you need to secure your place more in advance, for example due to visum requirements or making travel plans, please let us know so that we can review your application earlier.
 
 ## Program
 
