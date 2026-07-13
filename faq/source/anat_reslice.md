@@ -38,7 +38,7 @@ When the anatomical data is plotted, the default behavior is to plot the anatomi
 
 {% include image src="/assets/img/faq/anat_reslice/mri.png" width="400" %}
 
-_Figure 1. Anatomical mri plotted **without** using ft_volumereslice before plotting_
+_Figure 1. Anatomical MRI plotted **without** using ft_volumereslice before plotting_
 
 When you call the **[ft_volumereslice](/reference/ft_volumereslice)** function on the anatomical MRI, it will apply the transformation matrix to the field `anatomy` and interpolate the anatomical data onto a new voxel-grid that is aligned with the axis of the head coordinate system. If the input MRI has a `coordsys` field, the center of the volume will be shifted (with respect to the origin of the coordinate system) for the brain to fit nicely in the box. By default the voxel resolution is 1 mm. The output will have a different orientation of the anatomy and consequently, a different transformation matrix.
 
@@ -52,7 +52,7 @@ Plotting the resliced anatomical MRI results in a figure with the usually desire
 
 {% include image src="/assets/img/faq/anat_reslice/mrirs.png" %}
 
-_Figure 2. Plot of the anatomical mri after using ft_volumereslice_
+_Figure 2. Plot of the anatomical MRI after using ft_volumereslice_
 
 ## Make the voxels isotropic
 

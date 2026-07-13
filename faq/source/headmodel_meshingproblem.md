@@ -12,7 +12,7 @@ If you create an EEG (or MEG) headmodel from an anatomical MRI image, it may hap
     % determine where FieldTrip is installed
     [ftver, ftpath] = ft_version;
     
-    % load an anatomical mri
+    % load an anatomical MRI
     mri = ft_read_mri(fullfile(ftpath, 'template/anatomy', 'single_subj_T1_1mm.nii'));
     mri.coordsys = 'acpc';
 
