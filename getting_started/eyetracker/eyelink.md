@@ -50,19 +50,19 @@ The output data contains:
 
     disp(data_eye.label)
 
-    '1'
-    '2'
-    '3'
-    '4'
+    'timestamps'
+    'chan01'
+    'chan02'
+    'chan03'
 
-Channel 1 represents time, channel 2 is the horizontal x-coordinate, channel 3 is the vertical y-coordinate and channel 4 is the pupil dilation. FieldTrip just created 'dummy' labels for the individual channels, although usually there is a fixed order. Sometimes there is a 5'th channel present, which - for data obtained at the Donders Centre for Cognitive Neuroimaging (DCCN) - contains the digital triggers sent by the stimulus presentation computer. This might be useful information for synchronization with data from another recording modality (e.g., EEG or MEG).
+The timestamps channel represents time (in ms), chan01 is the horizontal x-coordinate, chan02 is the vertical y-coordinate and chan03 is the pupil dilation. FieldTrip just created 'dummy' labels for the individual channels, although usually there is a fixed order. Sometimes there is a 5'th channel present, which - for some of the data obtained at the Donders Centre for Cognitive Neuroimaging (DCCN) - may contain the digital triggers sent by the stimulus presentation computer. This might be useful information for synchronization with data from another recording modality (e.g., EEG or MEG).
 
 If you want your channel names to be more informative, you can use the following montage (see **[ft_apply_montage](/reference/forward/ft_apply_montage)**) to rename the channels while preprocessing:
 
     cfg = [];
     cfg.dataset          = filename_eye;
     cfg.montage.tra      = eye(4);
-    cfg.montage.labelorg = {'1', '2', '3', '4'};
+    cfg.montage.labelorg = {'timestamps', 'chan01', 'chan02', 'chan03'};
     cfg.montage.labelnew = {'EYE_TIMESTAMP', 'EYE_HORIZONTAL', 'EYE_VERTICAL', 'EYE_DIAMETER'};
     data_eye = ft_preprocessing(cfg);
 
@@ -74,9 +74,9 @@ The events represented in the eye-tracker datafile can be explored using **[ft_r
 
     disp(unique({event_eye.type}))
 
-     {'BLINK'}    {'FIX'}    {'INPUT'}    {'SACC'}
+     {'eblink'}    {'efix'}    {'esacc'}    {'input'}    {'msg'}    {'sblink'}    {'sfix'}    {'ssacc'}
 
-The events that are coded as type "INPUT", reflect the digital triggers sent by the stimulus PC. You can plot the event values against the time, with each individual point representing one INPUT event:
+The events that are coded as type "input", reflect the digital triggers sent by the stimulus PC. You can plot the event values against the time, with each individual point representing one input event:
 
     figure
     plot([event_eye.sample]./data_eye.hdr.Fs, [event_eye.value], '.')
