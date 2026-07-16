@@ -1,0 +1,45 @@
+articleids:
+- idtype: pmid
+  value: '42386530'
+- idtype: doi
+  value: 10.1523/ENEURO.0008-26.2026
+- idtype: pii
+  value: ENEURO.0008-26.2026
+- idtype: pmcid
+  value: PMC13364504
+authors:
+- authtype: Author
+  name: Qian H
+- authtype: Author
+  name: Johnson GW
+- authtype: Author
+  name: Hughes NC
+- authtype: Author
+  name: Chao A
+- authtype: Author
+  name: Long IC
+- authtype: Author
+  name: Paulo DL
+- authtype: Author
+  name: Zhao Z
+- authtype: Author
+  name: Subramanian D
+- authtype: Author
+  name: Taylor WD
+- authtype: Author
+  name: Dhima K
+- authtype: Author
+  name: Bick SK
+epubdate: 2026 Jul 13
+fulljournalname: eNeuro
+issue: '7'
+pages: ''
+pmclivedate: 2026/07/15
+printpubdate: 2026 Jul
+pubdate: 2026 Jul
+sortdate: 2026/07/13 00:00
+source: eNeuro
+title: Movement Disorder Patients with Depression Have Altered Corticostriatal Alpha-Beta
+  Power Response to Reward and Loss.
+uid: '13364504'
+volume: '13'

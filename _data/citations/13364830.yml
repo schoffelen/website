@@ -1,0 +1,31 @@
+articleids:
+- idtype: pmid
+  value: '42439946'
+- idtype: doi
+  value: 10.1007/s00426-026-02311-8
+- idtype: pii
+  value: 10.1007/s00426-026-02311-8
+- idtype: pmcid
+  value: PMC13364830
+authors:
+- authtype: Author
+  name: Gunia A
+- authtype: Author
+  name: Kalina A
+- authtype: Author
+  name: Javůrková A
+- authtype: Author
+  name: Vlček K
+epubdate: 2026 Jul 13
+fulljournalname: Psychological research
+issue: '4'
+pages: ''
+pmclivedate: 2026/07/15
+printpubdate: ''
+pubdate: 2026 Jul 13
+sortdate: 2026/07/13 00:00
+source: Psychol Res
+title: The behavioral evidence of processing congruences and incongruences between
+  Self- and Other-perspective-related representations during both perspective judgments.
+uid: '13364830'
+volume: '90'

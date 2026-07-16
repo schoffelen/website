@@ -1,0 +1,49 @@
+articleids:
+- idtype: pmid
+  value: '42227921'
+- idtype: doi
+  value: 10.1002/epi.70235
+- idtype: pmcid
+  value: PMC13360913
+authors:
+- authtype: Author
+  name: Kriukova K
+- authtype: Author
+  name: Li L
+- authtype: Author
+  name: Staba RJ
+- authtype: Author
+  name: Boswell M
+- authtype: Author
+  name: Asifriyaz T
+- authtype: Author
+  name: Thomas R
+- authtype: Author
+  name: Gugger JJ
+- authtype: Author
+  name: Shamas M
+- authtype: Author
+  name: Diaz-Arrastia R
+- authtype: Author
+  name: Buitrago Blanco M
+- authtype: Author
+  name: Engel J
+- authtype: Author
+  name: Vespa PM
+- authtype: Author
+  name: Duncan D
+- authtype: CollectiveName
+  name: EpiBios4Rx investigators
+epubdate: 2026 Jun 2
+fulljournalname: Epilepsia
+issue: '7'
+pages: 3612-3628
+pmclivedate: 2026/07/14
+printpubdate: 2026 Jul
+pubdate: 2026 Jul
+sortdate: 2026/07/01 00:00
+source: Epilepsia
+title: 'High-frequency oscillations after acute hemorrhagic traumatic brain injury:
+  insights into posttraumatic epilepsy development.'
+uid: '13360913'
+volume: '67'

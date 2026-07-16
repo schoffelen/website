@@ -1,0 +1,37 @@
+articleids:
+- idtype: pmid
+  value: '42330982'
+- idtype: doi
+  value: 10.1088/1741-2552/ae805e
+- idtype: pmcid
+  value: PMC13365862
+authors:
+- authtype: Author
+  name: Leriche RB
+- authtype: Author
+  name: Wozny TA
+- authtype: Author
+  name: Saal J
+- authtype: Author
+  name: Motzkin JC
+- authtype: Author
+  name: Sellers KK
+- authtype: Author
+  name: Starr PA
+- authtype: Author
+  name: Chang EF
+- authtype: Author
+  name: Shirvalkar P
+epubdate: 2026 Jul 14
+fulljournalname: Journal of neural engineering
+issue: '4'
+pages: ''
+pmclivedate: 2026/07/15
+printpubdate: ''
+pubdate: 2026 Jul 14
+sortdate: 2026/07/14 00:00
+source: J Neural Eng
+title: Human intracranial signal stability tracks anatomical accuracy after electrode
+  reimplantation.
+uid: '13365862'
+volume: '23'

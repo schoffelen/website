@@ -1,0 +1,29 @@
+articleids:
+- idtype: doi
+  value: 10.3390/s26134019
+- idtype: pmcid
+  value: PMC13364487
+authors:
+- authtype: Author
+  name: Ghani U
+- authtype: Author
+  name: Ahmad I
+- authtype: Author
+  name: Pervez S
+- authtype: Author
+  name: Hosseini SE
+- authtype: Author
+  name: Niazi IK
+epubdate: 2026 Jun 24
+fulljournalname: Sensors (Basel, Switzerland)
+issue: '13'
+pages: ''
+pmclivedate: 2026/07/14
+printpubdate: ''
+pubdate: 2026 Jul
+sortdate: 2026/06/24 00:00
+source: Sensors (Basel)
+title: 'NeuroStat: An Open-Source EEG Connectivity Platform for Randomised Controlled
+  Trials.'
+uid: '13364487'
+volume: '26'
